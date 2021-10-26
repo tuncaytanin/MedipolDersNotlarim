@@ -1,0 +1,23 @@
+﻿@model KutuphaneYonetimi1O.Entites.Model.Kategori
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div style="text-align:center;color:coral">
+    <h2><b>Kategori Ekle</b></h2>
+</div>
+<div style="margin:15px" class="form-group">
+    @using (Html.BeginForm("Ekle", "Kategori", FormMethod.Post))
+    {
+        @Html.LabelFor(x => x.KategoriAdi)
+        @Html.TextBoxFor(x => x.KategoriAdi, new { @class = "form-control" })
+        <br />
+        @Html.LabelFor(x => x.KategoriAciklama)
+        @Html.TextBoxFor(x => x.KategoriAciklama, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-success"> Kategori Ekle </button>
+
+    }
+</div>
+
+
