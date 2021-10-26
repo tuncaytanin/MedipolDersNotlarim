@@ -1,4 +1,4 @@
-﻿using KutuphaneYonetimi1O.Entites.Mapping;
+﻿using KutuphaneYonetimi2O.Entites.Mapping;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KutuphaneYonetimi1O.Entites.Model
+namespace KutuphaneYonetimi2O.Entites.Model
 {
     public class KutuphaneContext:DbContext
     {

@@ -1,0 +1,48 @@
+﻿@using KutuphaneYonetimi2O.Entites.Model
+@model List<YayinEvi>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="text-align:center;margin:15px">
+    <h2><b>Yayın Evleri </b></h2>
+</div>
+<div style="margin:15px">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Adi</th>
+                <th>Açıklama</th>
+                <th>Durumu</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var yayinEvi in Model)
+            {
+                <tr>
+                    <td>@yayinEvi.YayinEviAdi</td>
+                    <td>@yayinEvi.YayinEviAciklama</td>
+    
+                    <td>@yayinEvi.YayinEviDurumu</td>
+                    <td>
+                        <a class="btn btn-danger" href="/YayinEvi/Sil/@yayinEvi.YayinEviId"> Sil </a>&nbsp;
+                        <a class="btn btn-success" href="/YayinEvi/Guncelle/@yayinEvi.YayinEviId"> Güncelle </a>&nbsp;
+                        <a class="btn btn-info" href="/YayinEvi/YayinEviKitaplari/@yayinEvi.YayinEviId"> Yayin Evi Kitaplari </a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <br />
+    <a class="btn btn-primary" href="/YayinEvi/Ekle/"> Yayın Evi Ekle </a>
+
+</div>
+
+
+
+
+
+

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace KutuphaneYonetimi1O.Entites.Model
+namespace KutuphaneYonetimi2O.Entites.Model
 {
 
     public class Kategori

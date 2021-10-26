@@ -1,4 +1,4 @@
-﻿namespace KutuphaneYonetimi1O.Entites.Migrations
+﻿namespace KutuphaneYonetimi2O.Entites.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

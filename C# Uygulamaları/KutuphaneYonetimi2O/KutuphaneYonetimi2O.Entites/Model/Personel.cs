@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace KutuphaneYonetimi1O.Entites.Model
+namespace KutuphaneYonetimi2O.Entites.Model
 {
     public class Personel
     {

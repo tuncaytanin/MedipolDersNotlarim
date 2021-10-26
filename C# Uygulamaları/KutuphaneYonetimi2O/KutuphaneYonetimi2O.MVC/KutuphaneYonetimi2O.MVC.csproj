@@ -13,8 +13,8 @@
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KutuphaneYonetimi1O.MVC</RootNamespace>
-    <AssemblyName>KutuphaneYonetimi1O.MVC</AssemblyName>
+    <RootNamespace>KutuphaneYonetimi2O.MVC</RootNamespace>
+    <AssemblyName>KutuphaneYonetimi2O.MVC</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
@@ -130,6 +130,8 @@
     <Compile Include="Controllers\DenemeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\YayinEviController.cs" />
+    <Compile Include="Controllers\YazarController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2506,6 +2508,12 @@
     <Content Include="Views\Kategori\Index.cshtml" />
     <Content Include="Views\Kategori\Ekle.cshtml" />
     <Content Include="Views\Kategori\Guncelle.cshtml" />
+    <Content Include="Views\Yazar\Index.cshtml" />
+    <Content Include="Views\Yazar\Ekle.cshtml" />
+    <Content Include="Views\Yazar\Guncelle.cshtml" />
+    <Content Include="Views\YayinEvi\Index.cshtml" />
+    <Content Include="Views\YayinEvi\Ekle.cshtml" />
+    <Content Include="Views\YayinEvi\Guncelle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

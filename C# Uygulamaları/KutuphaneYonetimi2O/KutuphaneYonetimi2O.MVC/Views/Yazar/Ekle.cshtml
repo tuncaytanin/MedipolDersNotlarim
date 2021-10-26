@@ -1,0 +1,22 @@
+﻿@model KutuphaneYonetimi2O.Entites.Model.Yazar
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>Yazar ekleme</h2>
+
+@using (Html.BeginForm("Ekle", "Yazar", FormMethod.Post))
+{
+    <br />
+    @Html.LabelFor(x => x.YazarAdi)
+    @Html.TextBoxFor(x => x.YazarAdi, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.YazarSoyadi)
+    @Html.TextBoxFor(x => x.YazarSoyadi, new { @class = "form-control" })
+    <br />
+    @Html.LabelFor(x => x.DogumTarihi)
+    @Html.TextBoxFor(x => x.DogumTarihi, new { @class = "form-control" })
+    <br />
+    <button class="btn-success"> Yazar Ekle </button>
+} 

@@ -8,8 +8,8 @@
     <ProjectGuid>{6BF973B7-227A-4A58-B048-FBDB1E1D7BD2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KutuphaneYonetimi1O.Entites</RootNamespace>
-    <AssemblyName>KutuphaneYonetimi1O.Entites</AssemblyName>
+    <RootNamespace>KutuphaneYonetimi2O.Entites</RootNamespace>
+    <AssemblyName>KutuphaneYonetimi2O.Entites</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>

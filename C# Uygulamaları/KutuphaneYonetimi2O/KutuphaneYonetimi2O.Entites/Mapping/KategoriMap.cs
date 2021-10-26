@@ -1,4 +1,4 @@
-﻿using KutuphaneYonetimi1O.Entites.Model;
+﻿using KutuphaneYonetimi2O.Entites.Model;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace KutuphaneYonetimi1O.Entites.Mapping
+namespace KutuphaneYonetimi2O.Entites.Mapping
 {
 
     public class KategoriMap: EntityTypeConfiguration<Kategori>

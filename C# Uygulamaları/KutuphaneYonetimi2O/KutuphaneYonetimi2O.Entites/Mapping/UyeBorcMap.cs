@@ -1,8 +1,8 @@
-﻿using KutuphaneYonetimi1O.Entites.Model;
+﻿using KutuphaneYonetimi2O.Entites.Model;
 using System.Data.Entity.ModelConfiguration;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace KutuphaneYonetimi1O.Entites.Mapping
+namespace KutuphaneYonetimi2O.Entites.Mapping
 {
     public class UyeBorcMap : EntityTypeConfiguration<UyeBorc>
     {

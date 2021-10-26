@@ -83,9 +83,9 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi2O.MVC.csproj.CoreCompileInputs.cache
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.pdb
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi1O.MVC.dll.config
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi1O.MVC.dll
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi1O.MVC.pdb
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.MVC.dll.config
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.MVC.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.MVC.pdb
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\csc.exe
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\csc.exe.config
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\csc.rsp
@@ -138,7 +138,7 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\Antlr3.Runtime.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\EntityFramework.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\EntityFramework.SqlServer.dll
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi1O.Entites.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.Entites.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\Microsoft.Web.Infrastructure.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\Newtonsoft.Json.dll
@@ -150,8 +150,8 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\System.Web.WebPages.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\System.Web.WebPages.Razor.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\WebGrease.dll
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi1O.Entites.pdb
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi1O.Entites.dll.config
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.Entites.pdb
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.Entites.dll.config
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\EntityFramework.xml
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\EntityFramework.SqlServer.xml
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\System.Web.Helpers.xml
@@ -166,6 +166,5 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\obj\Debug\KutuphaneYonetimi2O.MVC.csproj.AssemblyReference.cache
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\obj\Debug\KutuphaneYonetimi2O.MVC.csproj.CoreCompileInputs.cache
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\obj\Debug\KutuphaneYonetimi2O.MVC.csproj.CopyComplete
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.dll
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.pdb
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\obj\Debug\KutuphaneYonetimi2O.MVC.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\obj\Debug\KutuphaneYonetimi2O.MVC.pdb

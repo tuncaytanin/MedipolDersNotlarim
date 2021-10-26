@@ -1,4 +1,4 @@
-﻿using KutuphaneYonetimi1O.Entites.Model;
+﻿using KutuphaneYonetimi2O.Entites.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
