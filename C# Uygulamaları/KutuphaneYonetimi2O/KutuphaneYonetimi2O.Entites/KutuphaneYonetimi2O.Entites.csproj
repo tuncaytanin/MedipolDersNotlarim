@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{43E3F6B1-6905-45D7-8913-AA25220CDBD6}</ProjectGuid>
+    <ProjectGuid>{6BF973B7-227A-4A58-B048-FBDB1E1D7BD2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>KutuphaneYonetimi2O.Entites</RootNamespace>
-    <AssemblyName>KutuphaneYonetimi2O.Entites</AssemblyName>
+    <RootNamespace>KutuphaneYonetimi1O.Entites</RootNamespace>
+    <AssemblyName>KutuphaneYonetimi1O.Entites</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -43,6 +43,8 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -51,30 +53,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Maps\KategoriMap.cs" />
-    <Compile Include="Maps\KitapHareketMap.cs" />
-    <Compile Include="Maps\KitapMap.cs" />
-    <Compile Include="Maps\PersonelMap.cs" />
-    <Compile Include="Maps\UyeBorcMap.cs" />
-    <Compile Include="Maps\UyeMap.cs" />
-    <Compile Include="Maps\YayinEviMap.cs" />
-    <Compile Include="Maps\YazarMap.cs" />
-    <Compile Include="Maps\YetkiMap.cs" />
-    <Compile Include="Migrations\202110121616368_DatabaseOlustur.cs" />
-    <Compile Include="Migrations\202110121616368_DatabaseOlustur.designer.cs">
-      <DependentUpon>202110121616368_DatabaseOlustur.cs</DependentUpon>
+    <Compile Include="Mapping\KategoriMap.cs" />
+    <Compile Include="Mapping\KitapHareketMap.cs" />
+    <Compile Include="Mapping\KitapMap.cs" />
+    <Compile Include="Mapping\PersonelMap.cs" />
+    <Compile Include="Mapping\UyeBorcMap.cs" />
+    <Compile Include="Mapping\UyeMap.cs" />
+    <Compile Include="Mapping\YayinEviMap.cs" />
+    <Compile Include="Mapping\YazarMap.cs" />
+    <Compile Include="Mapping\YetkiMap.cs" />
+    <Compile Include="Migrations\202110261416550_githubRepositoryDegisimiDatabaseCreate.cs" />
+    <Compile Include="Migrations\202110261416550_githubRepositoryDegisimiDatabaseCreate.designer.cs">
+      <DependentUpon>202110261416550_githubRepositoryDegisimiDatabaseCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Models\Kategori.cs" />
-    <Compile Include="Models\Kitap.cs" />
-    <Compile Include="Models\KitapHareket.cs" />
-    <Compile Include="Models\KutphaneContext.cs" />
-    <Compile Include="Models\Personel.cs" />
-    <Compile Include="Models\Uye.cs" />
-    <Compile Include="Models\UyeBorc.cs" />
-    <Compile Include="Models\YayinEvi.cs" />
-    <Compile Include="Models\Yazar.cs" />
-    <Compile Include="Models\Yetki.cs" />
+    <Compile Include="Model\Kategori.cs" />
+    <Compile Include="Model\Kitap.cs" />
+    <Compile Include="Model\KitapHareket.cs" />
+    <Compile Include="Model\KutuphaneContext.cs" />
+    <Compile Include="Model\Personel.cs" />
+    <Compile Include="Model\Uye.cs" />
+    <Compile Include="Model\UyeBorc.cs" />
+    <Compile Include="Model\YayinEvi.cs" />
+    <Compile Include="Model\Yazar.cs" />
+    <Compile Include="Model\Yetki.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -82,8 +84,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202110121616368_DatabaseOlustur.resx">
-      <DependentUpon>202110121616368_DatabaseOlustur.cs</DependentUpon>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202110261416550_githubRepositoryDegisimiDatabaseCreate.resx">
+      <DependentUpon>202110261416550_githubRepositoryDegisimiDatabaseCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

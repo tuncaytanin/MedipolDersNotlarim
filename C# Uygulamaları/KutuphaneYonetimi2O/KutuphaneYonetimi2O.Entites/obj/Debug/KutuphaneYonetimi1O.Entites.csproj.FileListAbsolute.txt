@@ -1,0 +1,15 @@
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\KutuphaneYonetimi1O.Entites.dll.config
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\KutuphaneYonetimi1O.Entites.dll
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\KutuphaneYonetimi1O.Entites.pdb
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\EntityFramework.dll
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\EntityFramework.SqlServer.dll
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\EntityFramework.xml
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\EntityFramework.SqlServer.xml
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.csproj.AssemblyReference.cache
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.csproj.CoreCompileInputs.cache
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.dll
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.pdb
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.Migrations.DatabaseOlustur.resources
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.csproj.GenerateResource.cache
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.Migrations.TablolariOlusturma.resources
+C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1Ogretim\KutuphaneYonetimiMVC1O\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.Migrations.YetkiDuzenle.resources

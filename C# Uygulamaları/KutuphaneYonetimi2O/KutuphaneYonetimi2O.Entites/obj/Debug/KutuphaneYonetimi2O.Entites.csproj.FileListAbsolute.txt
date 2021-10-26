@@ -1,13 +1,13 @@
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\KutuphaneYonetimi2O.Entites.dll.config
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\KutuphaneYonetimi2O.Entites.dll
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\KutuphaneYonetimi2O.Entites.pdb
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\EntityFramework.dll
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\EntityFramework.SqlServer.dll
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\EntityFramework.xml
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\EntityFramework.SqlServer.xml
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.csproj.AssemblyReference.cache
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.csproj.CoreCompileInputs.cache
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.dll
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.pdb
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.Migrations.DatabaseOlustur.resources
-C:\Üniversite Ders Notları\2021-2022\Guz\C#Uygulamaları\1O\KutuphaneYonetimiMVC2O\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.csproj.GenerateResource.cache
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\KutuphaneYonetimi1O.Entites.dll.config
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\KutuphaneYonetimi1O.Entites.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\KutuphaneYonetimi1O.Entites.pdb
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\EntityFramework.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\EntityFramework.SqlServer.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\EntityFramework.xml
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\bin\Debug\EntityFramework.SqlServer.xml
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.csproj.AssemblyReference.cache
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.csproj.CoreCompileInputs.cache
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.pdb
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.Migrations.githubRepositoryDegisimiDatabaseCreate.resources
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.csproj.GenerateResource.cache

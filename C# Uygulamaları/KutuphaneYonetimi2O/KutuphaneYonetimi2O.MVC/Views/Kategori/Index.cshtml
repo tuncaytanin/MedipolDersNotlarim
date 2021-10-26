@@ -1,0 +1,40 @@
+﻿@using KutuphaneYonetimi1O.Entites.Model
+@model List<Kategori>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<div style="margin:15px;text-align:center;color:crimson">
+    <h2><b> Kategoriler Listesi </b></h2>
+</div>
+<div style="margin:15px" class="form-group">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Kategori Id </th>
+                <th>Kategi Adi </th>
+                <th>Açıklama</th>
+                <th>Durumu</th>
+                <th> İşlem </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ktgr in Model)
+            {
+                <tr>
+                    <td>@ktgr.KategoriId</td>
+                    <td>@ktgr.KategoriAdi</td>
+                    <td>@ktgr.KategoriAciklama</td>
+                    <td>@ktgr.KategoriDurumu</td>
+                    <td>
+                        <a class="btn btn-success" href="/Kategori/Guncelle/@ktgr.KategoriId"> Güncelle </a>
+                        <a class="btn btn-danger" href="/Kategori/Sil/@ktgr.KategoriId"> Sil </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+    <a class="btn btn-primary" href="/Kategori/Ekle/"> Yeni Kategori Ekle</a>
+</div>

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("KutuphaneYonetimi2O.Entites")]
+[assembly: AssemblyTitle("KutuphaneYonetimi1O.Entites")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("KutuphaneYonetimi2O.Entites")]
+[assembly: AssemblyProduct("KutuphaneYonetimi1O.Entites")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("43e3f6b1-6905-45d7-8913-aa25220cdbd6")]
+[assembly: Guid("6bf973b7-227a-4a58-b048-fbdb1e1d7bd2")]
 
 // Version information for an assembly consists of the following four values:
 //

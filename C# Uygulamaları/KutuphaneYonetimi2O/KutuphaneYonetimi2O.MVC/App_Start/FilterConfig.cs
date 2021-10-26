@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace KutuphaneYonetimi2O.MVC
+namespace KutuphaneYonetimi1O.MVC
 {
     public class FilterConfig
     {
