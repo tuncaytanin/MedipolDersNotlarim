@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31727.386
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutuphaneYonetimi2O.MVC", "KutuphaneYonetimi2O.MVC\KutuphaneYonetimi2O.MVC.csproj", "{69691545-5974-4F00-969E-0BA152CC163B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KutuphaneYonetimi2O.Entites", "KutuphaneYonetimi2O.Entites\KutuphaneYonetimi2O.Entites.csproj", "{43E3F6B1-6905-45D7-8913-AA25220CDBD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69691545-5974-4F00-969E-0BA152CC163B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69691545-5974-4F00-969E-0BA152CC163B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69691545-5974-4F00-969E-0BA152CC163B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69691545-5974-4F00-969E-0BA152CC163B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43E3F6B1-6905-45D7-8913-AA25220CDBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43E3F6B1-6905-45D7-8913-AA25220CDBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43E3F6B1-6905-45D7-8913-AA25220CDBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43E3F6B1-6905-45D7-8913-AA25220CDBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63145980-428C-4083-B4BA-72EB8A293C3F}
+	EndGlobalSection
+EndGlobal
