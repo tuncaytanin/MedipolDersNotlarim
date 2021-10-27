@@ -1,0 +1,25 @@
+﻿@model KutuphaneYonetimi1O.Entites.Model.YayinEvi
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="margin: 15px; text-align: center; background-color: #1C2E3E; color: white">
+    <h2><b> Yayın Evi Ekleme </b></h2>
+</div>
+
+<div style="margin:15px" class="form-group">
+    @using (Html.BeginForm("Ekle", "YayinEvi", FormMethod.Post))
+    {
+        @Html.Label("YayinEvi Adı")
+        @Html.TextBoxFor(x => x.YayinEviAdi, new { @class = "form-control" })
+        <br />
+        @Html.Label("YayinEvi Açıklama")
+        @Html.TextBoxFor(x => x.YayinEviAciklama, new { @class = "form-control" })
+        <br />
+        <button class="btn-primary"> Ekle </button>
+    }
+</div>
+
+
+

@@ -1,0 +1,28 @@
+﻿@model KutuphaneYonetimi1O.Entites.Model.Yazar
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div style="margin: 15px; text-align: center; background-color: #1C2E3E; color: white">
+    <h2><b> Yazar Ekleme </b></h2>
+</div>
+
+<div class="form-group" style="margin:15px">
+    @using (Html.BeginForm("Ekle", "Yazar", FormMethod.Post))
+    {
+        @Html.Label("Adi")
+        @Html.TextBoxFor(y => y.YazarAdi , new  {@class ="form-control"})
+        <br />
+        @Html.Label("Soyadi")
+        @Html.TextBoxFor(y => y.YazarSoyadi, new { @class = "form-control" })
+        <br />
+        @Html.Label("Doğum Tarihi")
+        @Html.TextBoxFor(y => y.DogumTarihi, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-success"> Ekle </button>
+    }
+</div>
+
+

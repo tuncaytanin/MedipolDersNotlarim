@@ -1,0 +1,43 @@
+﻿@using KutuphaneYonetimi1O.Entites.Model
+@model List<Yazar>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 style="text-align: center; background-color:#1C2E3E;color:white">
+    <b> Yazarlar </b>
+</h2>
+
+<div style="margin:15px" class="form-group">
+    <table class="table table-bordered">
+        <thead>
+            <tr style="text-align: center; background-color:#1C2E3E;color:white">
+                <th>Id</th>
+                <th>Adı</th>
+                <th>Soyadı</th>
+                <th>Doğum Tarihi</th>
+                <th>Durumu</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var yazar in Model)
+            {
+                <tr style="text-align:center">
+                    <td>@yazar.YazarId</td>
+                    <td>@yazar.YazarAdi</td>
+                    <td>@yazar.YazarSoyadi</td>
+                    <td>@yazar.DogumTarihi</td>
+                    <td>@yazar.YazarDurumu</td>
+                    <td>
+                        <a class="btn btn-danger" href="/Yazar/Sil/@yazar.YazarId">Sil</a>&nbsp;
+                        <a class="btn btn-success" href="/Yazar/Guncelle/@yazar.YazarId">Güncelle</a>&nbsp;
+                        <a class="btn btn-warning" href="/Yazar/YazarinKitaplari/@yazar.YazarId">Yazarın Kitapları</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-primary" href="/Yazar/Ekle/" style="background-color: #1C2E3E"> Yazar Ekle </a>
+</div>
