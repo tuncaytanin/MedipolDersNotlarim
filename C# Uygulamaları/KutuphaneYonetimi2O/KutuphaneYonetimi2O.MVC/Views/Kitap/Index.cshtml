@@ -1,0 +1,63 @@
+﻿@using KutuphaneYonetimi2O.Entites.Model
+@model List<Kitap>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="text-align: center; margin: 15px; background-color: #343A40; color: white ">
+    <h2> <b>Kitaplarımız </b></h2>
+</div>
+
+<div>
+    @using (Html.BeginForm("Index", "Kitap", FormMethod.Get))
+    {
+       <div>
+           <b>Aranacak Kelime :  </b> @Html.TextBox("aramaKelime")
+               <button style=" background-color: #343A40; color:white"> Arama Yap </button>
+  
+       </div>  
+    }
+
+</div>
+
+<div style="margin:15px">
+    <table class="table table-bordered">
+        <thead>
+            <tr style="background-color: #343A40; color: white">
+                <th>Id</th>
+                <th>KitapAdi</th>
+                <th>Yazari</th>
+                <th>Kategorisi</th>
+                <th>YayınEvi</th>
+                <th>SayfaSayisi</th>
+                <th>Basım Yili</th>
+                <th>Durumu</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ktp in Model)
+            {
+                <tr>
+                    <td>@ktp.KitapId</td>
+                    <td>@ktp.KitapAdi</td>
+                    <td>@ktp.Yazar.YazarAdi&nbsp;@ktp.Yazar.YazarSoyadi</td>
+                    <td>@ktp.Kategori.KategoriAdi</td>
+                    <td>@ktp.YayinEvi.YayinEviAdi</td>
+                    <td>@ktp.SayfaSayisi</td>
+                    <td>@ktp.BasimYili</td>
+                    <td>@ktp.KitapDurumu</td>
+                    <td>
+                        <a class="btn btn-danger" href="/Kitap/Sil/@ktp.KitapId">Sil</a>&nbsp;
+                        <a class="btn btn-default" href="/KitapHareket/KitabiAlanKisiler/@ktp.KitapId">Kitabı Alanlar</a>&nbsp;
+                        <a class="btn btn-primary" href="/Kitap/Guncelle/@ktp.KitapId">Güncelle</a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<a style="margin: 15px; background-color: #343A40; color:white" href="/Kitap/Ekle/" class="btn"> <b>Yeni Kitap Ekle </b></a>

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace KutuphaneYonetimi1O.MVC
+namespace KutuphaneYonetimi2O.MVC
 {
     public class RouteConfig
     {

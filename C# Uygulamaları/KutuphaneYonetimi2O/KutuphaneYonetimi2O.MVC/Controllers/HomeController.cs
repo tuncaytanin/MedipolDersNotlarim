@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace KutuphaneYonetimi1O.MVC.Controllers
+namespace KutuphaneYonetimi2O.MVC.Controllers
 {
     public class HomeController : Controller
     {

@@ -83,6 +83,7 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi2O.MVC.csproj.CoreCompileInputs.cache
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.pdb
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.MVC.dll.config
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.MVC.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\KutuphaneYonetimi2O.MVC.pdb
@@ -93,7 +94,6 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\csi.exe.config
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\csi.rsp
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.MVC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
