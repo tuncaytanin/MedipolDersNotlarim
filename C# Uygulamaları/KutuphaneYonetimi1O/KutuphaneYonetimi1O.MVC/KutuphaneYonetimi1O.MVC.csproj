@@ -130,6 +130,7 @@
     <Compile Include="Controllers\DenemeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
+    <Compile Include="Controllers\KitapController.cs" />
     <Compile Include="Controllers\YayinEviController.cs" />
     <Compile Include="Controllers\YazarController.cs" />
     <Compile Include="Global.asax.cs">
@@ -2514,6 +2515,9 @@
     <Content Include="Views\Yazar\Index.cshtml" />
     <Content Include="Views\Yazar\Ekle.cshtml" />
     <Content Include="Views\Yazar\Guncelle.cshtml" />
+    <Content Include="Views\Kitap\Index.cshtml" />
+    <Content Include="Views\Kitap\Ekle.cshtml" />
+    <Content Include="Views\Kitap\Guncelle.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

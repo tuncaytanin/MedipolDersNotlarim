@@ -12,6 +12,8 @@ namespace KutuphaneYonetimi1O.Entites.Model
         public string KitapAciklama { get; set; }
         public string BasimYili { get; set; }
         public short SayfaSayisi { get; set; }
+        
+     
         public bool KitapDurumu { get; set; }
 
 
