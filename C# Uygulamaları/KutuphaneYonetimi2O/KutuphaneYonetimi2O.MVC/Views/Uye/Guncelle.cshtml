@@ -1,0 +1,40 @@
+﻿@model KutuphaneYonetimi2O.Entites.Model.Uye
+@{
+    ViewBag.Title = "Guncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="text-align: center; margin: 15px; background-color: #218838; color: white ">
+    <h2> <b> @Model.UyeAdi&nbsp;@Model.UyeSoyadi Güncelleme Sayfası </b></h2>
+</div>
+
+<div class="form-group" style="margin:15px">
+    @using (Html.BeginForm("Guncelle", "Uye", FormMethod.Post))
+    {
+        @Html.Label("Üye Id")
+        @Html.TextBoxFor(x => x.UyeId, new { @class = "form-control", @readonly = "readonly" })
+        <br />
+        @Html.Label("Üye Adı")
+        @Html.TextBoxFor(x => x.UyeAdi, new { @class = "form-control" })
+        <br />
+        @Html.Label("Üye Soyadi")
+        @Html.TextBoxFor(x => x.UyeSoyadi, new { @class = "form-control" })
+        <br />
+        @Html.Label("Cinsiyet")
+        @Html.TextBoxFor(x => x.Cinsiyet, new { @class = "form-control" })
+        <br />
+        @Html.Label("Email")
+        @Html.TextBoxFor(x => x.UyeEmail, new { @class = "form-control" })
+        <br />
+        @Html.Label("Telefonu")
+        @Html.TextBoxFor(x => x.Telefon, new { @class = "form-control" })
+        <br />
+        @Html.Label("Doğum Tarihi")
+        @Html.TextBoxFor(x => x.DogumTarihi, new { @class = "form-control" })
+        <br />
+        @Html.Label("Fotograf URL")
+        @Html.TextBoxFor(x => x.Fotograf, new { @class = "form-control" })
+        <br />
+        <button class="btn-success"> Kaydet </button>
+    }
+</div>

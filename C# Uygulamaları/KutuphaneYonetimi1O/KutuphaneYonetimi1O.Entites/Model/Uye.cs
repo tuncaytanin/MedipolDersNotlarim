@@ -12,6 +12,7 @@ namespace KutuphaneYonetimi1O.Entites.Model
         public DateTime DogumTarihi { get; set; }
         public string Cinsiyet { get; set; }
         public string Telefon { get; set; }
+        public string Fotograf { get; set; }
         public bool UyeDurumu { get; set; }
 
         public virtual ICollection<UyeBorc> UyeBorcs { get; set; }

@@ -15,6 +15,7 @@ namespace KutuphaneYonetimi1O.Entites.Mapping
             this.Property(p => p.UyeSoyadi).HasColumnType("varchar").HasMaxLength(100);
             this.Property(p => p.UyeEmail).HasColumnType("varchar").HasMaxLength(30);
             this.Property(p => p.Telefon).HasColumnType("varchar").HasMaxLength(15);
+            this.Property(p => p.Fotograf).HasColumnType("varchar").HasMaxLength(200);
             this.Property(p => p.DogumTarihi).HasColumnType("date");
         }
     }

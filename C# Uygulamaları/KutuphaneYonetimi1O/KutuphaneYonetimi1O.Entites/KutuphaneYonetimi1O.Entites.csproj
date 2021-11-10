@@ -74,6 +74,10 @@
     <Compile Include="Migrations\202110131327468_YetkiDuzenle.designer.cs">
       <DependentUpon>202110131327468_YetkiDuzenle.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111101106156_addFotografUye.cs" />
+    <Compile Include="Migrations\202111101106156_addFotografUye.designer.cs">
+      <DependentUpon>202111101106156_addFotografUye.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Kategori.cs" />
     <Compile Include="Model\Kitap.cs" />
@@ -103,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202110131327468_YetkiDuzenle.resx">
       <DependentUpon>202110131327468_YetkiDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111101106156_addFotografUye.resx">
+      <DependentUpon>202111101106156_addFotografUye.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

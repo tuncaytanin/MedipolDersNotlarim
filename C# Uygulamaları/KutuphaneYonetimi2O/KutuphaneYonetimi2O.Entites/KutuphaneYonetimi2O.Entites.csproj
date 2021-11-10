@@ -62,9 +62,13 @@
     <Compile Include="Mapping\YayinEviMap.cs" />
     <Compile Include="Mapping\YazarMap.cs" />
     <Compile Include="Mapping\YetkiMap.cs" />
-    <Compile Include="Migrations\202110261416550_githubRepositoryDegisimiDatabaseCreate.cs" />
-    <Compile Include="Migrations\202110261416550_githubRepositoryDegisimiDatabaseCreate.designer.cs">
-      <DependentUpon>202110261416550_githubRepositoryDegisimiDatabaseCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202111091341065_updateContext.cs" />
+    <Compile Include="Migrations\202111091341065_updateContext.designer.cs">
+      <DependentUpon>202111091341065_updateContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111091534181_UyeFotografEkleme.cs" />
+    <Compile Include="Migrations\202111091534181_UyeFotografEkleme.designer.cs">
+      <DependentUpon>202111091534181_UyeFotografEkleme.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Kategori.cs" />
@@ -87,8 +91,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202110261416550_githubRepositoryDegisimiDatabaseCreate.resx">
-      <DependentUpon>202110261416550_githubRepositoryDegisimiDatabaseCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202111091341065_updateContext.resx">
+      <DependentUpon>202111091341065_updateContext.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111091534181_UyeFotografEkleme.resx">
+      <DependentUpon>202111091534181_UyeFotografEkleme.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

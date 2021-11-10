@@ -1,0 +1,35 @@
+﻿@model KutuphaneYonetimi1O.Entites.Model.Uye
+@{
+    ViewBag.Title = "Ekle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="text-align: center; background-color: #1CB15F ;color:white;font-family:'Century Gothic';margin:5px">
+    <h2><b>Üye Ekleme</b></h2>
+</div>
+
+<div class="form-group" style="margin:5px">
+    @using (Html.BeginForm("Ekle", "Uye", FormMethod.Post))
+    {
+        @Html.Label("Üye Adı")
+        @Html.TextBoxFor(m => m.UyeAdi, new { @class = "form-control" })
+        <br />
+        @Html.Label("Üye Soyadı")
+        @Html.TextBoxFor(m => m.UyeSoyadi, new { @class = "form-control" })
+        
+        <br />
+        @Html.Label("Telefonu")
+        @Html.TextBoxFor(m => m.Telefon, new { @class = "form-control" })
+        <br />
+        @Html.Label("Email")
+        @Html.TextBoxFor(m => m.UyeEmail, new { @class = "form-control" })
+        <br />
+        @Html.Label("Cinsiyet")
+        @Html.TextBoxFor(m => m.Cinsiyet, new { @class = "form-control" })
+        <br />
+        @Html.Label("Fotoğraf")
+        @Html.TextBoxFor(m => m.Fotograf, new { @class = "form-control" })
+        <br />
+        <button style="background-color: #1CB15F;color:white"> Ekle </button>
+    }
+</div>

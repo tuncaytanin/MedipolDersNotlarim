@@ -28,3 +28,4 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.csproj.CoreCompileInputs.cache
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.pdb
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.Migrations.addFotografUye.resources

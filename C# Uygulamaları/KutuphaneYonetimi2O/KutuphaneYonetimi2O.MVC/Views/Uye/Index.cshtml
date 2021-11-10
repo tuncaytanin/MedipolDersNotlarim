@@ -1,0 +1,68 @@
+﻿@using KutuphaneYonetimi2O.Entites.Model
+@using PagedList
+@using PagedList.Mvc
+@model PagedList.IPagedList<Uye>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="text-align: center; background-color: #218838; color: white; margin: 15px; font-family: 'Century Gothic'">
+    <h2><b> Üyelerimiz </b></h2>
+</div>
+
+<div>
+    @using (Html.BeginForm("Index", "Uye", FormMethod.Get))
+    {
+        <div>
+            <b>Aranacak Kelime :  </b> @Html.TextBox("uyeAdi")
+            <button style=" background-color: #218838; color: white"> Arama Yap </button>
+
+        </div>
+    }
+
+</div>
+
+<div style="margin:15px" class="form-group">
+
+
+    <table class="table table-bordered" style="font-family: 'Century Gothic'">
+        <thead style="text-align: center; background-color: #218838; color: white;">
+            <tr>
+                <th>Uye Id</th>
+                <th>Adi Soyadi</th>
+                <th>Doğum Tarihi</th>
+                <th>Cinsiyeti</th>
+                <th>Telefonu</th>
+                <th>Emaili</th>
+                <th>Durumu</th>
+                <th>Fotograf</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var uye in Model)
+            {
+                <tr>
+                    <td>@uye.UyeId</td>
+                    <td>@uye.UyeAdi&nbsp;@uye.UyeSoyadi</td>
+                    <td>@uye.DogumTarihi.ToShortDateString()</td>
+                    <td>@uye.Cinsiyet</td>
+                    <td>@uye.Telefon</td>
+                    <td>@uye.UyeEmail</td>
+                    <td><a href="/Uye/Guncelle/@uye.UyeId"><img src="@uye.Fotograf" width="80px" height="80px"/></a></td>
+                    <td>@uye.UyeDurumu</td>
+                    <td>
+                        <a class="btn btn-danger" href="/Uye/Sil/@uye.UyeId">Sil</a>&nbsp;
+                        <a class="btn btn-primary" href="/Uye/Guncelle/@uye.UyeId">Güncelle</a>&nbsp;
+                        <a class="btn btn-info" href="/Uye/KitapHarekets/@uye.UyeId">Kitap Hareketleri</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    @Html.PagedListPager(Model, sayfa => Url.Action("Index", new { sayfa }))
+</div>
+<a class="btn btn-success" href="/Uye/Ekle/" style="margin:15px"> Yeni Üye Ekle</a>
+
