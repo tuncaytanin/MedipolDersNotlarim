@@ -7,14 +7,14 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<div style="text-align: center; background-color: #1CB15F ;color:white;font-family:'Century Gothic';margin:5px">
+<div style="text-align: center; background-color: #1C2E3E; color: white; font-family: 'Century Gothic'; margin: 5px">
     <h2><b>Üyelerimiz</b></h2>
 </div>
 
 <div class="form-group" style="text-align:right;margin:5px">
     @using (Html.BeginForm("Index", "Uye", FormMethod.Get))
     {
-        <div style="color: #1CB15F"><b> Kitap Adı : </b> @Html.TextBox("uyeAdi")&nbsp;<button style="color: white; background-color: #1CB15F"> Arama yap</button> </div>
+        <div style="color: #1C2E3E"><b> Kitap Adı : </b> @Html.TextBox("uyeAdi")&nbsp;<button style="color: white; background-color: #1C2E3E"> Arama yap</button> </div>
 
     }
 </div>
@@ -22,7 +22,7 @@
 <div class="form-group">
     <table class="table table-bordered" style="text-align:center;font-family:'Century Gothic'">
         <thead>
-            <tr style="background-color: #1CB15F ;color:white">
+            <tr style="background-color: #1C2E3E; color: white">
                 <th>Uye Id</th>
                 <th>Adı Soyadı</th>
                 <th>Doğum Tarihi</th>
@@ -80,6 +80,6 @@
     <br />
 
     @Html.PagedListPager((IPagedList)Model, page=>Url.Action("Index",new { page}))
-    <a class="btn btn-secondary-" style="background-color: #1CB15F;color:white" href="/Uye/Ekle/"> Yeni Üye Ekle</a>
+    <a class="btn btn-secondary-" style="background-color: #1C2E3E; color: white" href="/Uye/Ekle/"> Yeni Üye Ekle</a>
 
 </div>

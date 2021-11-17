@@ -1,0 +1,45 @@
+﻿@using KutuphaneYonetimi2O.Entites.Model
+@model List<Personel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="text-align: center; margin: 15px; background-color: #343A40; color: white ">
+    <h2> <b>Personeller </b></h2>
+</div>
+
+<table class="table table-bordered">
+    <thead style="text-align: center; margin: 15px; background-color: #343A40; color: white ">
+        <tr>
+            <th>Id</th>
+            <th>Personel</th>
+            <th>Kullanıcı Adı</th>
+            <th>Email</th>
+            <th>Doğum Tarihi</th>
+            <th>Yetkisi</th>
+            <th>Fotoğrafı</th>
+            <th>İşlem</th>
+        </tr>
+    </thead>
+    <tbody style="text-align:center">
+        @foreach (var prs in Model)
+        {
+            <tr>
+                <td>@prs.PersonelId</td>
+                <td>@prs.PersonelAdi&nbsp;@prs.PersonelSoyadi</td>
+                <td>@prs.PersonelKAdi</td>
+                <td>@prs.PersonelEmail</td>
+                <td>@prs.DogumTarihi.ToShortDateString()</td>
+                <td>@prs.Yetki.YetkiAdi</td>
+                <td><a href="/Personel/Guncelle/@prs.PersonelId"> <img src="@prs.Fotograf" width="60px" height="60px"  /></a></td>
+                <td>
+                    <a class="btn btn-danger" href="/Personel/Sil/@prs.PersonelId"> Sil </a>&nbsp;
+                    <a class="btn btn-success" href="/Personel/Guncelle/@prs.PersonelId"> Güncelle </a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/Personel/Ekle/" class="btn btn-primary" style="background-color: #343A40;color:white"> Personel Ekle </a>

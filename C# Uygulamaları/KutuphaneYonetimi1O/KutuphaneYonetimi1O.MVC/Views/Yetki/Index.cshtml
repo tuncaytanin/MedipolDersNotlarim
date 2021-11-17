@@ -1,0 +1,85 @@
+﻿@using KutuphaneYonetimi1O.Entites.Model
+@model List<Yetki>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div style="font-family:'Century Gothic'">
+
+    <div style="text-align: center; color: white; background-color: #1C2E3E;margin-bottom:5px">
+        <h2><b> Yetkiler </b></h2>
+    </div>
+
+    <table class="table table-bordered" style=" text-align: center;">
+        <thead style=" color: white; background-color: #1C2E3E">
+            <tr>
+                <th>Id</th>
+                <th>Adi</th>
+                <th>Açıklama</th>
+                <th>Durumu</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Yetki ytk in Model)
+            {
+                string renk = "#1C2E3E";
+                string durum = "Aktif";
+                if (!ytk.YetkiDurumu)
+                {
+                    renk = "red";
+                    durum = "Pasif";
+                }
+                <tr style="color:@renk">
+
+                    <th>@ytk.YetkiId</th>
+                    <th>@ytk.YetkiAdi</th>
+                    <th>@ytk.YetkiAciklama</th>
+                    <th>@durum</th>
+
+                    <th>
+                        <a class="btn btn-danger" href="/Yetki/Sil/@ytk.YetkiId">Sil</a>&nbsp;
+                        <a class="btn btn-success" href="/Yetki/Guncelle/@ytk.YetkiId">Güncelle</a>
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#yetkiEkleModal"> Yeni Yetki Ekle</button>
+    
+    <div class="modal fade" id="yetkiEkleModal" tabindex="-1" role="dialog" aria-labelledby="">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+                    <h4 class="modal-title" id="myModalLabel">Yetki Ekle</h4>
+                </div>
+                <form method="post" action="/Yetki/Ekle">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label >
+                                Yetki Adı
+                            </label>
+                                
+                                <input type="text" name="YetkiAdi" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Yetki Açıklama
+                            </label>
+                                <input type="text"  name="YetkiAciklama" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">İptal Et</button>
+                        <button type="submit" class="btn btn-primary">Ekle</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

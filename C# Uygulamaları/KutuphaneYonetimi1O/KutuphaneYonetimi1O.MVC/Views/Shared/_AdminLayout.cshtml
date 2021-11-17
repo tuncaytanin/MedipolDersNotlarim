@@ -19,12 +19,9 @@
 </head>
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
-    <div class="wrapper">
-        <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-            <!-- Left navbar links -->
 
-        </nav>
+        <!-- Navbar -->
+
         <!-- /.navbar -->
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -110,6 +107,23 @@
                             </a>
                         </li>
 
+                        <li class="nav-item">
+                            <a href="/Personel/Index/" class="nav-link">
+                                <i class="nav-icon fas fa-house-user"></i>
+                                <p>
+                                    Personeller
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/Yetki/Index/" class="nav-link">
+                                <i class="nav-icon fas fa-key"></i>
+                                <p>
+                                    Yetkiler
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -118,18 +132,17 @@
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <div class="content-wrapper" >
 
        
             <!-- Main content -->
-            <section class="content">
+            <section class="content-header">
                 @RenderBody()
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
 
-    </div>
     <!-- ./wrapper -->
     <!-- jQuery -->
     <script src="~/AdminLTE-3.1.0/plugins/jquery/jquery.min.js"></script>

@@ -12,3 +12,4 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.pdb
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.Migrations.UyeFotografEkleme.resources
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi2O\KutuphaneYonetimi2O.Entites\obj\Debug\KutuphaneYonetimi2O.Entites.Migrations.addPersonelFotograf.resources

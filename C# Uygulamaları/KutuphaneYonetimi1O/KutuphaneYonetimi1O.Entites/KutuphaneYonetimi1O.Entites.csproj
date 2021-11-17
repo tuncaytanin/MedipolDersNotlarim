@@ -78,6 +78,14 @@
     <Compile Include="Migrations\202111101106156_addFotografUye.designer.cs">
       <DependentUpon>202111101106156_addFotografUye.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202111171133512_FotografPersonelAdd.cs" />
+    <Compile Include="Migrations\202111171133512_FotografPersonelAdd.designer.cs">
+      <DependentUpon>202111171133512_FotografPersonelAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202111171223399_personelTelefonAdd.cs" />
+    <Compile Include="Migrations\202111171223399_personelTelefonAdd.designer.cs">
+      <DependentUpon>202111171223399_personelTelefonAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Kategori.cs" />
     <Compile Include="Model\Kitap.cs" />
@@ -110,6 +118,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111101106156_addFotografUye.resx">
       <DependentUpon>202111101106156_addFotografUye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111171133512_FotografPersonelAdd.resx">
+      <DependentUpon>202111171133512_FotografPersonelAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202111171223399_personelTelefonAdd.resx">
+      <DependentUpon>202111171223399_personelTelefonAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

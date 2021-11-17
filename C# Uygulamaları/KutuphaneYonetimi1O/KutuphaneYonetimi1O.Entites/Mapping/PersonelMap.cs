@@ -16,6 +16,8 @@ namespace KutuphaneYonetimi1O.Entites.Mapping
             this.Property(p => p.PersonelKAdi).HasColumnType("varchar").HasMaxLength(30);
             this.Property(p => p.PersonelSoyadi).HasColumnType("varchar").HasMaxLength(100);
             this.Property(p => p.PersonelParola).HasColumnType("varchar").HasMaxLength(30);
+            this.Property(p => p.Fotograf).HasColumnType("varchar").HasMaxLength(200);
+            this.Property(p => p.Telefon).HasColumnType("varchar").HasMaxLength(15);
             this.Property(p => p.DogumTarihi).HasColumnType("date");
 
             this.HasRequired(p => p.Yetki).WithMany(p => p.Personels).HasForeignKey(p => p.YetkiId);

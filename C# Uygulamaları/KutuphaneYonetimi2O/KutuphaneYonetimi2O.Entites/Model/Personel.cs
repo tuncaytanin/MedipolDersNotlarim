@@ -11,6 +11,7 @@ namespace KutuphaneYonetimi2O.Entites.Model
         public string PersonelEmail { get; set; }
         public string PersonelKAdi { get; set; }
         public string PersonelParola { get; set; }
+        public string Fotograf { get; set; }
         public DateTime DogumTarihi { get; set; }
         public bool PersonelDurumu { get; set; }
         public int YetkiId { get; set; }

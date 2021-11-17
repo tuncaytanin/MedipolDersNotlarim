@@ -1,0 +1,101 @@
+﻿@model KutuphaneYonetimi2O.Entites.Model.Personel
+@{
+    ViewBag.Title = "Guncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="text-align: center; margin: 15px; background-color: #343A40; color: white ">
+    <h2> <b>Personel Güncelleme </b></h2>
+</div>
+<div class="tab-pane">
+    <form class="form-horizontal" style="text-align:right" method="post">
+
+        <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <label for="inputName" class="col-sm-1 col-form-label">Adı</label>
+            <div class="col-sm-8">
+                <input name="PersonelId" value="@Model.PersonelId" readonly class="form-control" id="inputName" placeholder="PersonelId">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <label for="inputName" class="col-sm-1 col-form-label">Adı</label>
+            <div class="col-sm-8">
+                <input name="PersonelAdi" value="@Model.PersonelAdi" class="form-control" id="inputName" placeholder="Adı">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <label for="inputName" class="col-sm-1 col-form-label">Soyadı</label>
+            <div class="col-sm-8">
+                <input name="PersonelSoyadi" value="@Model.PersonelSoyadi" class="form-control" id="inputName" placeholder="Soyadı">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+
+        <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <label for="inputName" class="col-sm-1 col-form-label">Email</label>
+            <div class="col-sm-8">
+                <input name="PersonelEmail" value="@Model.PersonelEmail" class="form-control" id="inputName" placeholder="Email">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+        <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <label for="inputName" class="col-sm-1 col-form-label">Kullanıcı Adı</label>
+            <div class="col-sm-8">
+                <input name="PersonelKAdi" value="@Model.PersonelKAdi" class="form-control" id="inputName" placeholder="Kullanıcı Adı">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <label for="inputName" class="col-sm-1 col-form-label">Doğum Tarihi</label>
+            <div class="col-sm-8">
+                <input name="DogumTarihi" value="@Model.DogumTarihi.ToShortDateString()" class="form-control" id="inputName" placeholder="Doğum Tarihi">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <label for="inputName" class="col-sm-1 col-form-label">Yetkisi</label>
+            <div class="col-sm-8">
+                <input name="YetkiId" value="@Model.YetkiId" type="text" class="form-control" id="inputName" placeholder="Yetkisi">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-1"></div>
+            <label for="inputName" class="col-sm-1 col-form-label">Profil Fotoğtrafı</label>
+            <div class="col-sm-8">
+                <input name="Fotograf" value="@Model.Fotograf" type="text" class="form-control" id="inputName" placeholder="Link adresi buraya yazınız">
+            </div>
+            <div class="col-sm-2"></div>
+        </div>
+
+        <div class="form-group row" style="text-align:left">
+            <div class="offset-sm-2 col-sm-10">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> I agree to the <a href="#">terms and conditions</a>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row" style="text-align:left">
+            <div class="offset-sm-2 col-sm-10">
+                <button type="submit" class="btn btn-danger">Kaydet</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- /.tab-pane -->

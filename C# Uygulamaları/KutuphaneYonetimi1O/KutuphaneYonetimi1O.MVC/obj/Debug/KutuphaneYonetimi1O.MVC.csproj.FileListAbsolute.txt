@@ -142,6 +142,8 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\Microsoft.Web.Infrastructure.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\Newtonsoft.Json.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\PagedList.dll
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\PagedList.Mvc.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Helpers.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Mvc.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Optimization.dll
@@ -154,6 +156,8 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\KutuphaneYonetimi1O.Entites.dll.config
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\EntityFramework.xml
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\EntityFramework.SqlServer.xml
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\PagedList.xml
+C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\PagedList.Mvc.xml
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Helpers.xml
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Mvc.xml
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Optimization.xml
@@ -168,8 +172,3 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.csproj.CoreCompileInputs.cache
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.pdb
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\PagedList.dll
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\PagedList.Mvc.dll
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\PagedList.xml
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\PagedList.Mvc.xml
-C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.csproj.CopyComplete

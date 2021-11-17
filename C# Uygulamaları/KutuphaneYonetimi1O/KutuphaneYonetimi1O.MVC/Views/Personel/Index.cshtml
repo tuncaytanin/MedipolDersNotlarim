@@ -1,0 +1,68 @@
+﻿@using KutuphaneYonetimi1O.Entites.Model
+@model List<Personel>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="font-family:'Century Gothic'">
+
+    <div style="text-align: center; color: white; background-color: #1C2E3E;margin-bottom:5px">
+        <h2><b> Personeller </b></h2>
+    </div>
+    <div class="form-group" style="text-align:right;margin:5px">
+        @using (Html.BeginForm("Index", "Personel", FormMethod.Get))
+        {
+            <div><b> Personel : </b> @Html.TextBox("aranacakKelime")&nbsp;<button style="color: white; background-color: #1C2E3E"> Arama yap</button> </div>
+
+        }
+    </div>
+
+    <table class="table table-bordered" style=" text-align: center;" >
+        <thead style=" color: white; background-color: #1C2E3E">
+            <tr>
+                <th>Id</th>
+                <th>Personel</th>
+                <th>Kullanıcı Adı</th>
+                <th>Email</th>
+                <th>Telefon</th>
+                <th>Doğum Tarihi</th>
+                <th>Yetkisi</th>
+                <th>Durumu</th>
+                <th>Fotoğraf</th>
+                <th>İşlem</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Personel prs in Model)
+            {
+                string renk = "#1C2E3E";
+                string durum = "Aktif";
+                if (!prs.PersonelDurumu)
+                {
+                    renk = "red";
+                    durum = "Pasif";
+                }
+              <tr style="color:@renk">
+
+                  <th>@prs.PersonelId</th>
+                  <th>@prs.PersonelAdi&nbsp;@prs.PersonelSoyadi</th>
+                  <th>@prs.PersonelKAdi</th>
+                  <th>@prs.PersonelEmail</th>
+                  <th>@prs.Telefon</th>
+                  <th>@prs.DogumTarihi.ToLongDateString()</th>
+                  <th>@prs.Yetki.YetkiAdi</th>
+                  <th>@durum</th>
+                  <th><a href="/Personel/Guncelle/@prs.PersonelId"><img src="@prs.Fotograf" width="50px" height="50px"/></a></th>
+                  <th>
+                      <a class="btn btn-danger" href="/Personel/Sil/@prs.PersonelId">Sil</a>&nbsp;
+                      <a class="btn btn-success" href="/Personel/Guncelle/@prs.PersonelId">Güncelle</a>
+                  </th>
+              </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Personel/Ekle/" class="btn btn-primary" style="margin: 5px; background-color: #1C2E3E;color:white"> Yeni Personel Ekle </a>
+
+</div>
+

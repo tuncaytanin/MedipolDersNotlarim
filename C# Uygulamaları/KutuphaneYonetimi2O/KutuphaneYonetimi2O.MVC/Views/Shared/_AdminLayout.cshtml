@@ -19,11 +19,8 @@
 </head>
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
-    <div class="wrapper">
+  
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light">
-
-        </nav>
         <!-- /.navbar -->
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
@@ -52,17 +49,17 @@
                         <!-- Add icons to the links using the .nav-icon class
     with font-awesome or any other icon font library -->
                         <li class="nav-header">Menü </li>
-               
-                            <li class="nav-item">
-                                <a href="/Kategori/Index/" class="nav-link">
-                                    <i class="nav-icon fas fa-th-large"></i>
-                                    <p>
-                                        Kategeoriler
-                                    </p>
-                                </a>
-                            </li>
 
-                       
+                        <li class="nav-item">
+                            <a href="/Kategori/Index/" class="nav-link">
+                                <i class="nav-icon fas fa-th-large"></i>
+                                <p>
+                                    Kategeoriler
+                                </p>
+                            </a>
+                        </li>
+
+
 
                         <li class="nav-item">
                             <a href="/Yazar/Index/" class="nav-link">
@@ -110,7 +107,14 @@
                                 </p>
                             </a>
                         </li>
-
+                        <li class="nav-item">
+                            <a href="/Personel/Index/" class="nav-link">
+                                <i class="nav-icon fas fa-users"></i>
+                                <p>
+                                    Personeller
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
@@ -123,14 +127,14 @@
 
        
             <!-- Main content -->
-            <section class="content">
+            <section class="content-header">
                 @RenderBody()
             </section>
             <!-- /.content -->
         </div>
         <!-- /.content-wrapper -->
 
-    </div>
+  
     <!-- ./wrapper -->
     <!-- jQuery -->
     <script src="~/AdminLTE-3.1.0/plugins/jquery/jquery.min.js"></script>
