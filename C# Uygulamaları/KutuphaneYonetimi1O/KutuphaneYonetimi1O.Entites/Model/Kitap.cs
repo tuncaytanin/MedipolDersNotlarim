@@ -14,6 +14,11 @@ namespace KutuphaneYonetimi1O.Entites.Model
         public short SayfaSayisi { get; set; }
         
      
+        //Todo Kitap durumunu char'a çevir. 
+        /// <summary>
+        /// Kitabın istem üzerindeki anlık durumunu bildirir. 
+        /// A-> Akitf, P->Pasif ,S -> Silindi
+        /// </summary>
         public bool KitapDurumu { get; set; }
 
 

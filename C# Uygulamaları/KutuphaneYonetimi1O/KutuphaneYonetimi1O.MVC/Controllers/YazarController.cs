@@ -61,5 +61,12 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult YazarinKitaplari(int id)
+        {
+            List<Kitap> kitaplar = db.Kitap.AsNoTracking().Where(x=>x.YazarId==id ).ToList();
+
+            return View(kitaplar);
+        }
+
     }
 }

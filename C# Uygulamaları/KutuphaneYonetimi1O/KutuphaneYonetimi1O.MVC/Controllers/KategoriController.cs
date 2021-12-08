@@ -1,4 +1,5 @@
 ﻿using KutuphaneYonetimi1O.Entites.Model;
+using KutuphaneYonetimi1O.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
         // GET: Kategori
         public ActionResult Index()
         {
-            List<Kategori> kategoriler = db.Kategori.Where(x => x.KategoriDurumu == true).ToList();
+            List<Kategori> kategoriler = Login.Kategoris.Where(x => x.KategoriDurumu == true).ToList();
             return View(kategoriler);
         }
 

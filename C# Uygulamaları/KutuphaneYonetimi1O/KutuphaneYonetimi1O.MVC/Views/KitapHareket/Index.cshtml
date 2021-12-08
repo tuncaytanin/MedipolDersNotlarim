@@ -1,0 +1,55 @@
+﻿
+@using KutuphaneYonetimi1O.Entites.Model
+@model List<KitapHareket>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="font-family:'Century Gothic'">
+
+    <div style="text-align: center; color: white; background-color: #1C2E3E;margin-bottom:5px">
+        <h2><b> Kitap Hareketleri </b></h2>
+    </div>
+    <div class="form-group" style="text-align:right;margin:15px">
+        @using (Html.BeginForm("Index", "KitapHareket", FormMethod.Get))
+        {
+            <div><b> Kitap Adı : </b> @Html.TextBox("aranacakKelime")&nbsp;<button style="color: white; background-color: #1C2E3E"> Arama yap</button> </div>
+
+        }
+    </div>
+    <div style="margin:15px">
+        <table class="table table-bordered">
+            <thead>
+                <tr style="text-align: center; background-color: #1C2E0E;color:white">
+                    <th style="width:7%">Hareket Id</th>
+                    <th>Alma Tarihi</th>
+                    <th>KitapAdi</th>
+                    <th>İade Tarihi</th>
+                    <th>Kitabi Alan</th>
+                    <th>Teslim Al</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ktphrkt in Model)
+                {
+                    <tr>
+                        <td>@ktphrkt.KitapHareketId</td>
+                        <td>@ktphrkt.AlmaTarihi.ToString("dd.MM.yyyy")</td>
+                        <td>@ktphrkt.Kitap.KitapAdi</td>
+                        <td>@ktphrkt.IadeTarihi.ToString("dd.MM.yyyy")</td>
+                        <td>@ktphrkt.Uye.UyeAdi &nbsp; @ktphrkt.Uye.UyeSoyadi</td>
+                        <td>
+                            <a class="btn btn-danger" href="/KitapHareket/TeslimAl/@ktphrkt.KitapHareketId"> Teslim Al </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<a class="btn" href="/KitapHareket/OduncVer/" style="text-align: center; background-color: #1C2E3E;color:white;margin:15px"> <b>Kitap Ödünç Ver</b> </a>
+
+

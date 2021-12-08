@@ -136,6 +136,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategoriController.cs" />
     <Compile Include="Controllers\KitapController.cs" />
+    <Compile Include="Controllers\KitapHareketController.cs" />
     <Compile Include="Controllers\PersonelController.cs" />
     <Compile Include="Controllers\UyeController.cs" />
     <Compile Include="Controllers\YayinEviController.cs" />
@@ -144,6 +145,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2534,10 +2536,13 @@
     <Content Include="Views\Personel\Ekle.cshtml" />
     <Content Include="Views\Personel\Guncelle.cshtml" />
     <Content Include="Views\Yetki\Index.cshtml" />
+    <Content Include="Views\YayinEvi\YayinEvininKitaplari.cshtml" />
+    <Content Include="Views\Yazar\YazarinKitaplari.cshtml" />
+    <Content Include="Views\KitapHareket\Index.cshtml" />
+    <Content Include="Views\KitapHareket\OduncVer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
     <Folder Include="Views\Deneme\" />
   </ItemGroup>
   <ItemGroup>

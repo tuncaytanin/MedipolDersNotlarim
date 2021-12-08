@@ -1,4 +1,5 @@
 ﻿using KutuphaneYonetimi1O.Entites.Model;
+using KutuphaneYonetimi1O.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
 
         public ActionResult Index(string aranacakKelime)
         {
-            var kitaplar = db.Kitap.Where(x => x.KitapDurumu == true);
+            var kitaplar = Login.Kitaps.Where(x => x.KitapDurumu == true);
             if (!string.IsNullOrEmpty(aranacakKelime))
             {
                 kitaplar = kitaplar.Where(x => x.KitapAdi.Contains(aranacakKelime));
@@ -56,7 +57,7 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
                                                 Text = s.YayinEviAdi
                                             }).ToList();
 
-            List<SelectListItem> kategoriler = db.Kategori.AsNoTracking().Where(x => x.KategoriDurumu == true)
+            List<SelectListItem> kategoriler =Login.Kategoris.Where(x=>x.KategoriDurumu==true)
                 .Select(s => new SelectListItem
                 {
                     Value = s.KategoriId.ToString(),

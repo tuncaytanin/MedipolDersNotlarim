@@ -1,0 +1,33 @@
+﻿@model KutuphaneYonetimi1O.Entites.Model.KitapHareket
+@{
+    ViewBag.Title = "OduncVer";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="font-family:'Century Gothic'">
+
+    <div style="text-align: center; background-color: #1C2E3E;color:white;margin:15px">
+        <h2><b>Ödünç Verme</b></h2>
+    </div>
+</div>
+
+<div style="margin:15px">
+    @using (Html.BeginForm("OduncVer", "KitapHareket", FormMethod.Post))
+    {
+
+
+        @Html.Label("Kitap Adı")
+        @Html.DropDownListFor(x => x.KitapId, (List<SelectListItem>)ViewBag.Kitaplar, new { @class = "form-control" })
+        <br />
+
+        @Html.Label("Üye")
+        @Html.DropDownListFor(x => x.UyeId, (List<SelectListItem>)ViewBag.Uyeler, new { @class = "form-control" })
+        <br />
+        @Html.Label("Pesonel")
+        @Html.DropDownListFor(x => x.PersonelId, (List<SelectListItem>)ViewBag.Personeller, new { @class = "form-control" })
+        <br />
+
+        <button style="text-align: center; background-color: #1C2E3E; color: white"> <b>Kitap Ödünç Ver</b></button>
+    }
+</div>
+

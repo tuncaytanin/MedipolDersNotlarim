@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6bf973b7-227a-4a58-b048-fbdb1e1d7bd2": {
+      "ProjectGuid": "6bf973b7-227a-4a58-b048-fbdb1e1d7bd2",
+      "DisplayName": "KutuphaneYonetimi1O.Entites",
+      "ColorIndex": 0
+    },
+    "8ee6b7d5-a896-48e2-966d-0cc87a90efc7": {
+      "ProjectGuid": "8ee6b7d5-a896-48e2-966d-0cc87a90efc7",
+      "DisplayName": "KutuphaneYonetimi1O.MVC",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

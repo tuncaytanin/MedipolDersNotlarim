@@ -1,0 +1,61 @@
+﻿@using KutuphaneYonetimi1O.Entites.Model
+@model List<Kitap>
+@{
+    ViewBag.Title = "YayinEvininKitaplari";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div style="font-family:'Century Gothic'">
+
+    <div style="text-align: center; color: white; background-color: #1C2E3E;margin-bottom:5px">
+        <h2><b>
+    @if (Model.Count > 0)
+    {
+        @Model[0].YayinEvi.YayinEviAdi.ToString();
+    }  &nbsp;' nin Kitaplari
+</b></h2>
+    </div>
+    <div class="form-group" style="text-align:right;margin:15px">
+        @using (Html.BeginForm("Index", "Kitap", FormMethod.Get))
+        {
+            <div><b> Kitap Adı : </b> @Html.TextBox("aranacakKelime")&nbsp;<button style="color: white; background-color: #1C2E3E"> Arama yap</button> </div>
+
+        }
+    </div>
+    <div style="margin:15px">
+        <table class="table table-bordered">
+            <thead>
+                <tr style="text-align: center; background-color: #1C2E0E;color:white">
+                    <th style="width:7%">KitapId</th>
+                    <th>KitapAdi</th>
+                    <th>Kategorisi</th>
+                    <th>Yazarı</th>
+                    <th style="width:8%">Sayfa Sayısı</th>
+                    <th style="width:7%">Basım Yılı</th>
+                    <th>İşlem</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ktp in Model)
+                {
+                    <tr>
+                        <td>@ktp.KitapId</td>
+                        <td>@ktp.KitapAdi</td>
+                        <td>@ktp.Kategori.KategoriAdi</td>
+                        <td>@ktp.Yazar.YazarAdi&nbsp;@ktp.Yazar.YazarSoyadi</td>
+                        <td>@ktp.SayfaSayisi</td>
+                        <td>@ktp.BasimYili</td>
+                        <td>
+                            <a class="btn btn-danger" href="/Kitap/Sil/@ktp.KitapId"> Sil </a>&nbsp;
+                            <a class="btn btn-primary" href="/Kitap/Guncelle/@ktp.KitapId"> Güncelle </a>&nbsp;
+                            <a class="btn btn-group" href="/Kitap/KitapHareketleri/@ktp.KitapId"> Kitap Harekeleri </a>&nbsp;
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+

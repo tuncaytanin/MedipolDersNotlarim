@@ -172,3 +172,4 @@ C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYone
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.csproj.CoreCompileInputs.cache
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.dll
 C:\GitHub\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.pdb
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.csproj.CopyComplete

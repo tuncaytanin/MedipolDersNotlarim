@@ -63,5 +63,15 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
             return RedirectToAction("Index");
 
         }
+
+        public ActionResult YayinEvininKitaplari(int id)
+        {
+            
+            List<Kitap> kitaplar = db.Kitap.Where(x => x.YayinEviId == id).ToList();
+
+   
+
+            return View(kitaplar);
+        }
     }
 }
