@@ -26,9 +26,10 @@ namespace KutuphaneYonetimi1O.Entites.Model
             modelBuilder.Configurations.Add(new UyeMap());
             modelBuilder.Configurations.Add(new YetkiMap());
             modelBuilder.Configurations.Add(new KitapHareketMap());
+            modelBuilder.Configurations.Add(new KasaMap());
         }
 
-
+        public DbSet<Kasa> Kasa { get; set; }
         public DbSet<Kategori> Kategori { get; set; }
         public DbSet<Kitap> Kitap { get; set; }
         public DbSet<YayinEvi> YayinEvi { get; set; }

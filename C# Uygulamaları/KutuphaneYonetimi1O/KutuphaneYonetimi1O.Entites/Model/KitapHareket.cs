@@ -13,6 +13,8 @@ namespace KutuphaneYonetimi1O.Entites.Model
         public DateTime KullaniciIadeTarihi { get; set; }
         public bool KitapHareketDurumu { get; set; }
 
+        public decimal CezaUcreti { get; set; }
+
         public virtual Kitap Kitap { get; set; }
         public virtual Uye Uye { get; set; }
         public virtual Personel Personel { get; set; }

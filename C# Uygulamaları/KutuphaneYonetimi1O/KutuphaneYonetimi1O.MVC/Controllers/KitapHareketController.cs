@@ -12,12 +12,18 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
     {
        
         // GET: KitapHareket
-        public ActionResult Index()
+        public ActionResult Index( string aranacakKelime)
         {
             List<KitapHareket> kitapHarekets;
             using (KutuphaneContext db = new KutuphaneContext())
             {
-                kitapHarekets = db.KitapHareket.AsNoTracking().Where(x => x.KitapHareketDurumu == true).ToList();
+                var hareketler = db.KitapHareket.AsNoTracking().Where(x => x.KitapHareketDurumu == true);
+                if (!string.IsNullOrEmpty(aranacakKelime))
+                {
+                    hareketler = hareketler.Where(x => x.Kitap.KitapAdi.Contains(aranacakKelime) || x.Uye.UyeAdi.Contains(aranacakKelime) || x.Uye.UyeSoyadi.Contains(aranacakKelime));
+                }
+
+                kitapHarekets = hareketler.ToList();
             }
 
             for (int i = 0; i < kitapHarekets.Count; i++)
@@ -36,7 +42,7 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
                                             .Select(s => new SelectListItem
                                             {
                                                 Value = s.KitapId.ToString(),
-                                                Text = s.KitapAdi
+                                                Text =  s.KitapId.ToString() +"-"+s.KitapAdi
                                             }).ToList();
 
             List<SelectListItem> uyeler = Login.Uyes.Where(x => x.UyeDurumu == true)
@@ -67,16 +73,63 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
             using (KutuphaneContext db = new KutuphaneContext())
             {
                 KitapHareket ktpHrkt= new KitapHareket();
-                ktpHrkt.Kitap = Login.Kitaps.Where(x => x.KitapId == pKitapHareket.KitapId).FirstOrDefault();
+                //  ktpHrkt.Kitap = Login.Kitaps.Where(x => x.KitapId == pKitapHareket.KitapId).FirstOrDefault();
+                ktpHrkt.KitapId = pKitapHareket.KitapId;
                 ktpHrkt.AlmaTarihi = DateTime.Now;
                 ktpHrkt.IadeTarihi = DateTime.Now.AddDays(7);
                 ktpHrkt.KitapHareketDurumu = true;
-                ktpHrkt.Personel = Login.Personels.Where(x => x.PersonelId == pKitapHareket.PersonelId).FirstOrDefault();
-                ktpHrkt.Uye = Login.Uyes.Where(x=>x.UyeId == pKitapHareket.UyeId).FirstOrDefault();
+                //ktpHrkt.Personel = Login.Personels.Where(x => x.PersonelId == pKitapHareket.PersonelId).FirstOrDefault();
+                ktpHrkt.PersonelId = pKitapHareket.PersonelId;
+                ktpHrkt.UyeId = pKitapHareket.UyeId;
+                //ktpHrkt.Uye = Login.Uyes.Where(x=>x.UyeId == pKitapHareket.UyeId).FirstOrDefault();
                 db.KitapHareket.Add(ktpHrkt);
                 db.SaveChanges();
             }
+
+            for (int i = 0; i < Login.Kitaps.Count; i++)
+            {
+                // Kitapları keşden almamalıydım. Çünkü sürekli değişen bir değer.
+                // Kitaplari keşkdeki bilgili güncelleme yapıyorum
+                if (pKitapHareket.KitapId == Login.Kitaps[i].KitapId)
+                {
+                    Login.Kitaps[i].KitapDurumu = false;
+                }
+            }
             return RedirectToAction("Index");
         }
+    
+    
+        public ActionResult TeslimAl(int id)
+        {
+            using (KutuphaneContext db = new KutuphaneContext())
+            {
+                KitapHareket kitapHareket = db.KitapHareket.Find(id);
+                kitapHareket.KitapHareketDurumu = false;
+                kitapHareket.KullaniciIadeTarihi = DateTime.Now;
+                if (kitapHareket.IadeTarihi < DateTime.Now)
+                {
+                    kitapHareket.CezaUcreti = Convert.ToDecimal((Convert.ToDateTime(DateTime.Now.ToShortDateString()) - kitapHareket.IadeTarihi).TotalDays.ToString());
+                }
+                else
+                {
+                    kitapHareket.CezaUcreti = 0;
+                }
+                db.SaveChanges();
+                for (int i = 0; i < Login.Kitaps.Count; i++)
+                {
+                    // Kitapları keşden almamalıydım. Çünkü sürekli değişen bir değer.
+                    // Kitaplari keşkdeki bilgili güncelleme yapıyorum
+                    if (kitapHareket.KitapId == Login.Kitaps[i].KitapId)
+                    {
+                        Login.Kitaps[i].KitapDurumu = true;
+                    }
+                }
+            }
+
+
+            return RedirectToAction("Index");
+
+        }
+    
     }
 }

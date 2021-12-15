@@ -27,6 +27,7 @@
                     <th>Alma Tarihi</th>
                     <th>KitapAdi</th>
                     <th>İade Tarihi</th>
+                    <th>Ceza Ucreti</th>
                     <th>Kitabi Alan</th>
                     <th>Teslim Al</th>
                 </tr>
@@ -34,16 +35,28 @@
             <tbody>
                 @foreach (var ktphrkt in Model)
                 {
-                    <tr>
-                        <td>@ktphrkt.KitapHareketId</td>
-                        <td>@ktphrkt.AlmaTarihi.ToString("dd.MM.yyyy")</td>
-                        <td>@ktphrkt.Kitap.KitapAdi</td>
-                        <td>@ktphrkt.IadeTarihi.ToString("dd.MM.yyyy")</td>
-                        <td>@ktphrkt.Uye.UyeAdi &nbsp; @ktphrkt.Uye.UyeSoyadi</td>
-                        <td>
-                            <a class="btn btn-danger" href="/KitapHareket/TeslimAl/@ktphrkt.KitapHareketId"> Teslim Al </a>
-                        </td>
-                    </tr>
+                    string ceza = "0";
+
+                    if (ktphrkt.IadeTarihi < DateTime.Now)
+                    {
+                        // kitabı geç getiriyor demek ?
+                        ceza = (Convert.ToDateTime(DateTime.Now.ToShortDateString()) - ktphrkt.IadeTarihi).TotalDays.ToString();
+                    }
+
+
+                <tr>
+                    <td>@ktphrkt.KitapHareketId</td>
+                    <td>@ktphrkt.AlmaTarihi.ToString("dd.MM.yyyy")</td>
+                    <td> @(ktphrkt.KitapId.ToString()+" -"+ktphrkt.Kitap.KitapAdi)</td>
+                    <td>@ktphrkt.IadeTarihi.ToString("dd.MM.yyyy")</td>
+                    <td>
+                        @ceza.ToString()
+                    </td>
+                    <td>@ktphrkt.Uye.UyeAdi &nbsp; @ktphrkt.Uye.UyeSoyadi</td>
+                    <td>
+                        <a class="btn btn-danger" href="/KitapHareket/TeslimAl/@ktphrkt.KitapHareketId"> Teslim Al </a>
+                    </td>
+                </tr>
                 }
             </tbody>
         </table>

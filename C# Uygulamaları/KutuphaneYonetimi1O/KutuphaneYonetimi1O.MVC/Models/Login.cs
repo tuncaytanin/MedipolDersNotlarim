@@ -107,7 +107,7 @@ namespace KutuphaneYonetimi1O.MVC.Models
 
 
 
-        private static void KitabiEslemeYap()
+        public static void KitabiEslemeYap()
         {
             for (int i = 0; i < kitaps.Count; i++)
             {

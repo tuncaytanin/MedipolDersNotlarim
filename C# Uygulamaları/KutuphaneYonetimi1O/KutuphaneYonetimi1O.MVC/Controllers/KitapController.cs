@@ -18,7 +18,7 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
 
         public ActionResult Index(string aranacakKelime)
         {
-            var kitaplar = Login.Kitaps.Where(x => x.KitapDurumu == true);
+            var kitaplar = Login.Kitaps.Where(x => x.KitapDurumu == true || x.KitapDurumu == false);
             if (!string.IsNullOrEmpty(aranacakKelime))
             {
                 kitaplar = kitaplar.Where(x => x.KitapAdi.Contains(aranacakKelime));
@@ -77,8 +77,18 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
             ktp.KitapAciklama = pKitap.KitapAciklama;
             ktp.Kategori = db.Kategori.Find(pKitap.Kategori.KategoriId);
             ktp.YayinEvi = db.YayinEvi.Find(pKitap.YayinEvi.YayinEviId);
-            ktp.Yazar= db.Yazar.Find(pKitap.Yazar.YazarId);
+            ktp.Yazar = db.Yazar.Find(pKitap.Yazar.YazarId);
             db.SaveChanges();
+
+            for (int i = 0; i < Login.Kitaps.Count; i++)
+            {
+                if (Login.Kitaps[i].KitapId == ktp.KitapId)
+                {
+                    Login.Kitaps[i].KitapDurumu = true;
+                    break;
+                }
+            }
+
             return RedirectToAction("Index");
         }
 
@@ -118,12 +128,12 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
         [HttpPost] // Sayfa içerisinde bir yerde sayfayı post edildiğinde çalışacak
         public ActionResult Ekle(Kitap pKitap)
         {
-            pKitap.Kategori = db.Kategori.Find(pKitap.KategoriId);
-            pKitap.Yazar = db.Yazar.Find(pKitap.YazarId);
-            pKitap.YayinEvi = db.YayinEvi.Find(pKitap.YayinEviId);
             pKitap.KitapDurumu = true;
             db.Kitap.Add(pKitap);
             db.SaveChanges();
+
+            Login.Kitaps.Add(pKitap);
+            Login.KitabiEslemeYap();
 
             return RedirectToAction("Index");
         }

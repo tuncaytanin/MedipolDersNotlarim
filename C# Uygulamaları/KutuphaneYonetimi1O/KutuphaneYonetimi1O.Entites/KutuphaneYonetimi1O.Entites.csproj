@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Mapping\KasaMap.cs" />
     <Compile Include="Mapping\KategoriMap.cs" />
     <Compile Include="Mapping\KitapHareketMap.cs" />
     <Compile Include="Mapping\KitapMap.cs" />
@@ -86,7 +87,16 @@
     <Compile Include="Migrations\202111171223399_personelTelefonAdd.designer.cs">
       <DependentUpon>202111171223399_personelTelefonAdd.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112151509425_addKasa.cs" />
+    <Compile Include="Migrations\202112151509425_addKasa.designer.cs">
+      <DependentUpon>202112151509425_addKasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112151513433_updateKAsa.cs" />
+    <Compile Include="Migrations\202112151513433_updateKAsa.designer.cs">
+      <DependentUpon>202112151513433_updateKAsa.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Model\Kasa.cs" />
     <Compile Include="Model\Kategori.cs" />
     <Compile Include="Model\Kitap.cs" />
     <Compile Include="Model\KitapHareket.cs" />
@@ -124,6 +134,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202111171223399_personelTelefonAdd.resx">
       <DependentUpon>202111171223399_personelTelefonAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112151509425_addKasa.resx">
+      <DependentUpon>202112151509425_addKasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112151513433_updateKAsa.resx">
+      <DependentUpon>202112151513433_updateKAsa.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

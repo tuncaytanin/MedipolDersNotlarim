@@ -14,6 +14,7 @@ namespace KutuphaneYonetimi1O.Entites.Mapping
             this.Property(p=>p.AlmaTarihi).HasColumnType("date");
             this.Property(p=>p.IadeTarihi).HasColumnType("date");
             this.Property(p=>p.KullaniciIadeTarihi).HasColumnType("date");
+            this.Property(p => p.CezaUcreti).HasPrecision(11, 2);
 
             this.HasRequired(p => p.Personel).WithMany(p => p.KitapHarekets).HasForeignKey(p => p.PersonelId);
             this.HasRequired(p => p.Uye).WithMany(p => p.KitapHarekets).HasForeignKey(p => p.UyeId);

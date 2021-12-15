@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace KutuphaneYonetimi1O.Entites.Mapping
 {
+
     public class KitapMap : EntityTypeConfiguration<Kitap>
     {
         public KitapMap()
