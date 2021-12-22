@@ -79,7 +79,7 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
                 ktpHrkt.IadeTarihi = DateTime.Now.AddDays(7);
                 ktpHrkt.KitapHareketDurumu = true;
                 //ktpHrkt.Personel = Login.Personels.Where(x => x.PersonelId == pKitapHareket.PersonelId).FirstOrDefault();
-                ktpHrkt.PersonelId = pKitapHareket.PersonelId;
+                ktpHrkt.PersonelId = int.Parse(Session["PersonelId"].ToString());
                 ktpHrkt.UyeId = pKitapHareket.UyeId;
                 //ktpHrkt.Uye = Login.Uyes.Where(x=>x.UyeId == pKitapHareket.UyeId).FirstOrDefault();
                 db.KitapHareket.Add(ktpHrkt);
@@ -131,5 +131,20 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
 
         }
     
+   
+        public ActionResult GetById(int id)
+        {
+            using (KutuphaneContext db = new KutuphaneContext())
+            {
+                List<KitapHareket> kitapHarekets = db.KitapHareket.Where(x => x.KitapId == id).ToList();
+
+
+                foreach (var ktphrkt in kitapHarekets)
+                {
+                    ktphrkt.Uye = Login.Uyes.Where(x => x.UyeId == ktphrkt.UyeId).FirstOrDefault();
+                }
+                return View(kitapHarekets);
+            }
+        }
     }
 }

@@ -20,6 +20,7 @@ C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYone
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\EntityFramework.SqlServer.dll
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\EntityFramework.xml
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\bin\Debug\EntityFramework.SqlServer.xml
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.csproj.AssemblyReference.cache
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.Migrations.DatabaseOlustur.resources
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.Migrations.TablolariOlusturma.resources
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.Entites\obj\Debug\KutuphaneYonetimi1O.Entites.Migrations.YetkiDuzenle.resources

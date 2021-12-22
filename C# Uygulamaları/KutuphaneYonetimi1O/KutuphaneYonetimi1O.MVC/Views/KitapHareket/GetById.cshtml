@@ -1,0 +1,65 @@
+﻿@using KutuphaneYonetimi1O.Entites.Model
+@model List<KitapHareket>
+@{
+    ViewBag.Title = "GetById";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@foreach (var ktpHrkt in Model)
+{
+    <div class="timeline timeline-inverse">
+        <!-- timeline time label -->
+        <div class="time-label">
+            <span class="bg-danger">
+                @ktpHrkt.AlmaTarihi.ToString("dd-MMM-yyyy")
+            </span>
+        </div>
+        <!-- /.timeline-label -->
+        <!-- timeline item -->
+        <div>
+            <i class="fas fa-car bg-primary"></i>
+
+            <div class="timeline-item">
+
+                <h3 class="timeline-header"><a href="#">@ktpHrkt.Uye.UyeAdi &nbsp;@ktpHrkt.Uye.UyeSoyadi </a> kitabı aldı</h3>
+
+
+            </div>
+        </div>
+        <!-- END timeline item -->
+        <!-- timeline time label -->
+        <div class="time-label">
+            @{
+                string backColor = "bg-success";
+                string durumu = "Devam Ediyor";
+                if (ktpHrkt.KitapHareketDurumu == true)
+                {
+
+                    backColor = "bg-danger";
+                }
+                else
+                {
+                    durumu = @ktpHrkt.KullaniciIadeTarihi.ToString("dd-MMM-yyyy");
+                }
+            }
+
+            <span class="@backColor">
+
+                @durumu
+
+            </span>
+        </div>
+        <!-- /.timeline-label -->
+        <!-- timeline item -->
+        <!-- END timeline item -->
+
+    </div>
+}
+
+
+
+
+
+
+

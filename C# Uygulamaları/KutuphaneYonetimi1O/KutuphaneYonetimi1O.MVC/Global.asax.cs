@@ -12,6 +12,7 @@ namespace KutuphaneYonetimi1O.MVC
     {
         protected void Application_Start()
         {
+            GlobalFilters.Filters.Add(new AuthorizeAttribute()); // İzin vermediğim hiçbiryere giriş yapılamaması sağla
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

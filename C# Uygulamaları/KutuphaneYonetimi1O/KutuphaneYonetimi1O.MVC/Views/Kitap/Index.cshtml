@@ -46,7 +46,7 @@
                         <td>
                             <a class="btn btn-danger" href="/Kitap/Sil/@ktp.KitapId"> Sil </a>&nbsp;
                             <a class="btn btn-primary" href="/Kitap/Guncelle/@ktp.KitapId"> Güncelle </a>&nbsp;
-                            <a class="btn btn-group" href="/Kitap/KitapHareketleri/@ktp.KitapId"> Kitap Harekeleri </a>&nbsp;
+                            <a class="btn btn-group" href="/KitapHareket/GetById/@ktp.KitapId"> Kitap Harekeleri </a>&nbsp;
                             @if (ktp.KitapDurumu == true)
                             {
                                 <a class="btn btn-dark" href="/KitapHareketleri/OduncVer/@ktp.KitapId"> Ödünç Ver </a>

@@ -22,10 +22,7 @@
 
         @Html.Label("Üye")
         @Html.DropDownListFor(x => x.UyeId, (List<SelectListItem>)ViewBag.Uyeler, new { @class = "form-control" })
-        <br />
-        @Html.Label("Pesonel")
-        @Html.DropDownListFor(x => x.PersonelId, (List<SelectListItem>)ViewBag.Personeller, new { @class = "form-control" })
-        <br />
+
 
         <button style="text-align: center; background-color: #1C2E3E; color: white"> <b>Kitap Ödünç Ver</b></button>
     }

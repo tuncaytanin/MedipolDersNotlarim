@@ -39,7 +39,17 @@
                         <img src="~/AdminLTE-3.1.0/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Tuncay Tanin </a>
+                        <a href="#" class="d-block">
+                            @{ 
+                                string adSoyad = "Tuncay Tanin";
+                                if (Session["Personeli"] !=null)
+                                {
+                                    adSoyad = Session["Personeli"].ToString();
+                                }
+
+                            }
+                            @adSoyad
+                        </a>
                     </div>
                 </div>
 
@@ -131,6 +141,15 @@
                                 <i class="nav-icon fas fa-key"></i>
                                 <p>
                                     Yetkiler
+                                </p>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/Login/CikisYap/" class="nav-link">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>
+                                    Çıkış Yap
                                 </p>
                             </a>
                         </li>

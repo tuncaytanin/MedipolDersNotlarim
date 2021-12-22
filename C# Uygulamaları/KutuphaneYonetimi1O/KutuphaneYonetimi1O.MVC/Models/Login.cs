@@ -8,6 +8,7 @@ namespace KutuphaneYonetimi1O.MVC.Models
 {
     public static class Login
     {
+        public static Personel Personel;
 
         //toDo kategori eklemede cache tazeleme yap
         //

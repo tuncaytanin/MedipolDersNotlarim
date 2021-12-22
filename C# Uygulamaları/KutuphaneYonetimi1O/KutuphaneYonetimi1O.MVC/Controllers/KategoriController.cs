@@ -8,11 +8,17 @@ using System.Web.Mvc;
 
 namespace KutuphaneYonetimi1O.MVC.Controllers
 {
+
+
+
+
     public class KategoriController : Controller
     {
 
         KutuphaneContext db = new KutuphaneContext();
         // GET: Kategori
+
+
         public ActionResult Index()
         {
             List<Kategori> kategoriler = Login.Kategoris.Where(x => x.KategoriDurumu == true).ToList();

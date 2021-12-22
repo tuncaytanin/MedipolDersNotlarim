@@ -26,5 +26,16 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+
+        public ActionResult Sil(int id)
+        {
+            using (KutuphaneContext db = new KutuphaneContext())
+            {
+                Yetki yetki = db.Yetki.Find(id);
+                yetki.YetkiDurumu = false;
+                db.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
     }
 }
