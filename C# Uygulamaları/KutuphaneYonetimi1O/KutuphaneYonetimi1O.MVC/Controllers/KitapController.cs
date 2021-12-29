@@ -96,33 +96,40 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
 
         public  ActionResult Ekle()
         {
+            if (Login.Personel.YetkiId  ==  1 || Login.Personel.YetkiId ==2)
+            {
+                List<SelectListItem> yazarlar = db.Yazar.AsNoTracking().Where(y => y.YazarDurumu == true)
+                                .Select(s => new SelectListItem
+                                {
+                                    Value = s.YazarId.ToString(),
+                                    Text = s.YazarAdi + " " + s.YazarSoyadi
+                                }).ToList();
 
-            List<SelectListItem> yazarlar = db.Yazar.AsNoTracking().Where(y => y.YazarDurumu == true)
-                                            .Select(s => new SelectListItem
-                                            {
-                                                Value = s.YazarId.ToString(),
-                                                Text = s.YazarAdi + " " + s.YazarSoyadi
-                                            }).ToList();
 
+                List<SelectListItem> yayinEvleri = db.YayinEvi.AsNoTracking().Where(y => y.YayinEviDurumu == true)
+                                                .Select(s => new SelectListItem
+                                                {
+                                                    Value = s.YayinEviId.ToString(),
+                                                    Text = s.YayinEviAdi
+                                                }).ToList();
 
-            List<SelectListItem> yayinEvleri = db.YayinEvi.AsNoTracking().Where(y => y.YayinEviDurumu == true)
-                                            .Select(s => new SelectListItem
-                                            {
-                                                Value = s.YayinEviId.ToString(),
-                                                Text = s.YayinEviAdi
-                                            }).ToList();
+                List<SelectListItem> kategoriler = db.Kategori.AsNoTracking().Where(x => x.KategoriDurumu == true)
+                    .Select(s => new SelectListItem
+                    {
+                        Value = s.KategoriId.ToString(),
+                        Text = s.KategoriAdi
+                    }).ToList();
 
-            List<SelectListItem> kategoriler = db.Kategori.AsNoTracking().Where(x => x.KategoriDurumu == true)
-                .Select(s => new SelectListItem
-                {
-                    Value = s.KategoriId.ToString(),
-                    Text = s.KategoriAdi
-                }).ToList();
+                ViewBag.Kategoriler = kategoriler;
+                ViewBag.Yazarlar = yazarlar;
+                ViewBag.YayinEvleri = yayinEvleri;
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Index");
+            }
 
-            ViewBag.Kategoriler = kategoriler;
-            ViewBag.Yazarlar = yazarlar;
-            ViewBag.YayinEvleri = yayinEvleri;
-            return View();
         }
 
         [HttpPost] // Sayfa içerisinde bir yerde sayfayı post edildiğinde çalışacak

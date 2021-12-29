@@ -21,8 +21,17 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
 
         public ActionResult Index()
         {
-            List<Kategori> kategoriler = Login.Kategoris.Where(x => x.KategoriDurumu == true).ToList();
-            return View(kategoriler);
+            try
+            {
+                List<Kategori> kategoriler = Login.Kategoris.Where(x => x.KategoriDurumu == true).ToList();
+                return View(kategoriler);
+            }
+            catch (Exception)
+            {
+
+                return RedirectToAction("Index", "Login");
+            }
+
         }
 
         // Kategori Sil

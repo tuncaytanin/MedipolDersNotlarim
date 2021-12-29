@@ -19,101 +19,102 @@
 </head>
 <body class="hold-transition sidebar-mini">
     <!-- Site wrapper -->
+    <!-- Navbar -->
+    <!-- /.navbar -->
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <!-- Brand Logo -->
+        <a href="/Home/Index/" class="brand-link">
+            <img src="~/AdminLTE-3.1.0/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <span class="brand-text font-weight-light">Kütüphane Yönetimi</span>
+        </a>
 
-        <!-- Navbar -->
-
-        <!-- /.navbar -->
-        <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
-            <!-- Brand Logo -->
-            <a href="~/AdminLTE-3.1.0/index3.html" class="brand-link">
-                <img src="~/AdminLTE-3.1.0/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">Kütüphane Yönetimi</span>
-            </a>
-
-            <!-- Sidebar -->
-            <div class="sidebar">
-                <!-- Sidebar user (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="~/AdminLTE-3.1.0/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <a href="#" class="d-block">
-                            @{ 
-                                string adSoyad = "Tuncay Tanin";
-                                if (Session["Personeli"] !=null)
-                                {
-                                    adSoyad = Session["Personeli"].ToString();
-                                }
-
-                            }
-                            @adSoyad
-                        </a>
-                    </div>
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar user (optional) -->
+            <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+                <div class="image">
+                    <img src="/Personel/Guncelle/@Session["PersonelId"].ToString()" class="img-circle elevation-2" alt="User Image">
                 </div>
+                <div class="info">
+                    <a href="#" class="d-block">
+                        @{
+                            string adSoyad = "Tuncay Tanin";
+                            if (Session["Personeli"] != null)
+                            {
+                                adSoyad = Session["Personeli"].ToString();
+                            }
+
+                        }
+                        @adSoyad
+                    </a>
+                </div>
+            </div>
 
 
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-    with font-awesome or any other icon font library -->
+            <!-- Sidebar Menu -->
+            <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                    <!-- Add icons to the links using the .nav-icon class
+                    with font-awesome or any other icon font library -->
 
-                        <li class="nav-header">Menü </li>
-                        <li class="nav-item">
-                            <a href="/Kategori/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-th-large"></i>
-                                <p>
-                                    Kategeoriler
-                                </p>
-                            </a>
-                        </li>
+                    <li class="nav-header">Menü </li>
+                    <li class="nav-item">
+                        <a href="/Kategori/Index/" class="nav-link">
+                            <i class="nav-icon fas fa-th-large"></i>
+                            <p>
+                                Kategeoriler
+                            </p>
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a href="/YayinEvi/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-home"></i>
-                                <p>
-                                    Yayın Evleri
-                                </p>
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a href="/YayinEvi/Index/" class="nav-link">
+                            <i class="nav-icon fas fa-home"></i>
+                            <p>
+                                Yayın Evleri
+                            </p>
+                        </a>
+                    </li>
 
 
-                        <li class="nav-item">
-                            <a href="/Yazar/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-pen-alt"></i>
-                                <p>
-                                    Yazarlar
-                                </p>
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a href="/Yazar/Index/" class="nav-link">
+                            <i class="nav-icon fas fa-pen-alt"></i>
+                            <p>
+                                Yazarlar
+                            </p>
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a href="/Kitap/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-book-reader"></i>
-                                <p>
-                                    Kitaplar
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/Uye/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-user-friends"></i>
-                                <p>
-                                    Üyeler
-                                </p>
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a href="/Kitap/Index/" class="nav-link">
+                            <i class="nav-icon fas fa-book-reader"></i>
+                            <p>
+                                Kitaplar
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/Uye/Index/" class="nav-link">
+                            <i class="nav-icon fas fa-user-friends"></i>
+                            <p>
+                                Üyeler
+                            </p>
+                        </a>
+                    </li>
 
-                        <li class="nav-item">
-                            <a href="/KitapHareket/Index/" class="nav-link">
-                                <i class="nav-icon fas fa-calendar-week"></i>
-                                <p>
-                                    Kitap Hareketleri
-                                </p>
-                            </a>
-                        </li>
+                    <li class="nav-item">
+                        <a href="/KitapHareket/Index/" class="nav-link">
+                            <i class="nav-icon fas fa-calendar-week"></i>
+                            <p>
+                                Kitap Hareketleri
+                            </p>
+                        </a>
+                    </li>
+
+                    @if (int.Parse(Session["YetkiId"].ToString()) == 1)
+                    {
 
 
                         <li class="nav-header">Yönetici </li>
@@ -144,34 +145,33 @@
                                 </p>
                             </a>
                         </li>
-
-                        <li class="nav-item">
-                            <a href="/Login/CikisYap/" class="nav-link">
-                                <i class="nav-icon fas fa-sign-out-alt"></i>
-                                <p>
-                                    Çıkış Yap
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <!-- /.sidebar-menu -->
-            </div>
-            <!-- /.sidebar -->
-        </aside>
-
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper" >
-
-       
-            <!-- Main content -->
-            <section class="content-header">
-                @RenderBody()
-            </section>
-            <!-- /.content -->
+                    }
+                    <li class="nav-item">
+                        <a href="/Login/CikisYap/" class="nav-link">
+                            <i class="nav-icon fas fa-sign-out-alt"></i>
+                            <p>
+                                Çıkış Yap
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
         </div>
-        <!-- /.content-wrapper -->
+        <!-- /.sidebar -->
+    </aside>
 
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+
+
+        <!-- Main content -->
+        <section class="content-header">
+            @RenderBody()
+        </section>
+        <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
     <!-- ./wrapper -->
     <!-- jQuery -->
     <script src="~/AdminLTE-3.1.0/plugins/jquery/jquery.min.js"></script>

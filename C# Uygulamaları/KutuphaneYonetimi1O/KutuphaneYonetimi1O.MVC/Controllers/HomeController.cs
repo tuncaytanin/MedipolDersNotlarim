@@ -26,5 +26,11 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
 
             return View();
         }
+
+        [HttpPost]
+        public ActionResult MessageGonder()
+        {
+            return View("Index");
+        }
     }
 }

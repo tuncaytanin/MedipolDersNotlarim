@@ -1,5 +1,5 @@
 ﻿@using KutuphaneYonetimi1O.Entites.Model
-@model List<Kitap> 
+@model List<Kitap>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
@@ -12,9 +12,9 @@
         <h2><b> Kitap Ekle </b></h2>
     </div>
     <div class="form-group" style="text-align:right;margin:15px">
-        @using (Html.BeginForm("Index","Kitap",FormMethod.Get))
+        @using (Html.BeginForm("Index", "Kitap", FormMethod.Get))
         {
-        <div><b> Kitap Adı : </b> @Html.TextBox("aranacakKelime")&nbsp;<button style="color: white; background-color: #1C2E3E"> Arama yap</button> </div>
+            <div><b> Kitap Adı : </b> @Html.TextBox("aranacakKelime")&nbsp;<button style="color: white; background-color: #1C2E3E"> Arama yap</button> </div>
 
         }
     </div>
@@ -59,5 +59,11 @@
         </table>
     </div>
 </div>
+@{
+    string baglantiLinki = null;
+    if (int.Parse(Session["YetkiId"].ToString()) == 1 || int.Parse(Session["YetkiId"].ToString()) == 2)
+    {
+        <a class="btn" href="/Kitap/Ekle/" style="text-align: center; background-color: #1C2E3E;color:white;margin:15px"> <b>Kitap Ekle</b> </a>
+    }
+}
 
-<a class="btn" href="/Kitap/Ekle/" style="text-align: center; background-color: #1C2E3E;color:white;margin:15px"> <b>Kitap Ekle</b> </a>

@@ -10,8 +10,7 @@ namespace KutuphaneYonetimi1O.MVC.Models
     {
         public static Personel Personel;
 
-        //toDo kategori eklemede cache tazeleme yap
-        //
+
         private static List<Kategori> kategoris;
         // propertis
         public static List<Kategori> Kategoris
@@ -74,6 +73,19 @@ namespace KutuphaneYonetimi1O.MVC.Models
             {
                 yayinEvis = db.YayinEvi.AsNoTracking().ToList();
             }
+        }
+
+        public static void Clear()
+        {
+            // Chahce Temizleme
+            Kitaps = null;
+            YayinEvis = null;
+            Personels = null;
+            Uyes = null;
+            Yazars = null;
+            Kategoris = null;
+            Personel = null;
+
         }
 
         private static List<Kitap> kitaps;

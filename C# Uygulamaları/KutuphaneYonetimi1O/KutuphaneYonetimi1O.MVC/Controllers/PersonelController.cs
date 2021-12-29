@@ -1,4 +1,5 @@
 ﻿using KutuphaneYonetimi1O.Entites.Model;
+using KutuphaneYonetimi1O.MVC.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -32,24 +33,13 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
         public ActionResult Ekle(Personel pPersonel)
         {
             pPersonel.PersonelDurumu = true;
-            pPersonel.PersonelParola = ParolaOlustur(3);
+            pPersonel.PersonelParola =  ParolaOlusturma.Olustur(8);
             db.Personel.Add(pPersonel);
 
             db.SaveChanges();
             return RedirectToAction("Index");
         }
 
-        private string ParolaOlustur(int uzunluk)
-        {
-            //todo parola olusturma metodunu yaz
-            string sifre = "";
-            while (uzunluk>0)
-            {
-                sifre += "a";
-                uzunluk--;
-            }
-            return sifre;
-        }
 
         public ActionResult Sil(int id)
         {

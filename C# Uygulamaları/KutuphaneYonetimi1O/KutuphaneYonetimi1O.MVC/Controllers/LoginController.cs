@@ -35,7 +35,7 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
                     Session["PersonelId"] = personel.PersonelId;
                     Session["Personeli"] = personel.PersonelAdi + " " + personel.PersonelSoyadi;
                     Session["PersonelEmail"] = personel.PersonelEmail;
-
+                    Session["YetkiId"] = personel.YetkiId;
                     Login.Personel = personel;
                     Login.Personel.PersonelParola = "";
                     return RedirectToAction("Index", "Kategori");
@@ -49,6 +49,8 @@ namespace KutuphaneYonetimi1O.MVC.Controllers
 
         public ActionResult CikisYap()
         {
+            Session.Clear();
+            Login.Clear();
             FormsAuthentication.SignOut();
             return RedirectToAction("Index");
         }
