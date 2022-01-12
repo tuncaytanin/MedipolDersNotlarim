@@ -173,3 +173,11 @@ C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYone
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.csproj.CopyComplete
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.dll
 C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\obj\Debug\KutuphaneYonetimi1O.MVC.pdb
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Net.Http.Formatting.dll
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Http.dll
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Http.WebHost.dll
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Net.Http.Formatting.xml
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Http.xml
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\System.Web.Http.WebHost.xml
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\AutoMapper.dll
+C:\github\MedipolDersNotlarim\C# Uygulamaları\KutuphaneYonetimi1O\KutuphaneYonetimi1O.MVC\bin\AutoMapper.xml

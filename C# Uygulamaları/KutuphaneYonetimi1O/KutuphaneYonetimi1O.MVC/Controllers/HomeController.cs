@@ -6,6 +6,8 @@ using System.Web.Mvc;
 
 namespace KutuphaneYonetimi1O.MVC.Controllers
 {
+
+    [AllowAnonymous]
     public class HomeController : Controller
     {
         public ActionResult Index()

@@ -702,24 +702,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="modal-body">
 
                     <div class="login px-4 mx-auto mw-100">
-                        <h5 class="text-center mb-4">Login Now</h5>
-                        <form action="#" method="post">
+                        <h5 class="text-center mb-4">Sisteme Giriş Yap</h5>
+                        <form action="/Login/GirisYap/" method="post">
                             <div class="form-group">
-                                <label class="mb-2">Email address</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                <label class="mb-2">Email Adresi</label>
+                                <input type="email" class="form-control" name="PersonelEmail" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="" required="">
+                                <small id="emailHelp" class="form-text text-muted">Emailinizi başka bir yer ile payalaşılmayacaktır.</small>
                             </div>
                             <div class="form-group">
-                                <label class="mb-2">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="" required="">
+                                <label class="mb-2">Parola</label>
+                                <input type="password" name="PersonelParola" class="form-control" id="exampleInputPassword1" placeholder="" required="">
                             </div>
                             <div class="form-check mb-2">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                <label class="form-check-label" for="exampleCheck1">Kontrol Et</label>
                             </div>
-                            <button type="submit" class="btn btn-primary submit mb-4">Sign In</button>
+                            <button type="submit" class="btn btn-primary submit mb-4">Giriş Yap</button>
                             <p class="text-center pb-4">
-                                <a href="#" data-toggle="modal" data-target="#exampleModalCenter2"> Don't have an account?</a>
+                                <a href="#" data-toggle="modal" data-target="#exampleModalCenter2"> Yok bir hesabınız yok mu?</a>
                             </p>
                         </form>
                     </div>
