@@ -1,0 +1,8 @@
+﻿Blog için gerekli olan tablolar
+ -Kategoriler
+ -Blog 
+ - Kullanıcı - Yazar,Okuyucu , Admin
+ - Yetki  -> 
+ -Yorumlar
+ -Duyurular
+ -Fotogrflar

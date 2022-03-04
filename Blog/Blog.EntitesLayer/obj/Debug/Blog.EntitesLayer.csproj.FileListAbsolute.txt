@@ -1,0 +1,5 @@
+C:\github\MedipolDersNotlarim\Blog\Blog.EntitesLayer\bin\Debug\Blog.EntitesLayer.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.EntitesLayer\bin\Debug\Blog.EntitesLayer.pdb
+C:\github\MedipolDersNotlarim\Blog\Blog.EntitesLayer\obj\Debug\Blog.EntitesLayer.csproj.CoreCompileInputs.cache
+C:\github\MedipolDersNotlarim\Blog\Blog.EntitesLayer\obj\Debug\Blog.EntitesLayer.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.EntitesLayer\obj\Debug\Blog.EntitesLayer.pdb
