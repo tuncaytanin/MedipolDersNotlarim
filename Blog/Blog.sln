@@ -16,6 +16,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.DataAccessLayer", "Blo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.BusinessLayer", "Blog.BusinessLayer\Blog.BusinessLayer.csproj", "{E6CD717F-EF0A-4468-A730-5F9BFD0CB1AB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Class Library", "Class Library", "{71295D8A-8368-425E-BA16-0CFC26E6F131}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +43,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2C936A26-A185-495F-A99B-6E1E9BCA3826} = {71295D8A-8368-425E-BA16-0CFC26E6F131}
+		{BFE4BF44-DDB3-4E4A-AA94-A93171341169} = {71295D8A-8368-425E-BA16-0CFC26E6F131}
+		{E6CD717F-EF0A-4468-A730-5F9BFD0CB1AB} = {71295D8A-8368-425E-BA16-0CFC26E6F131}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {64D10D2F-52BE-44E2-A58D-9CF319F1A769}

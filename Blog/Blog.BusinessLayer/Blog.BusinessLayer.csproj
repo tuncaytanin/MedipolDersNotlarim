@@ -41,7 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstract\ICategoryService.cs" />
+    <Compile Include="Abstract\ICommentService.cs" />
+    <Compile Include="Concrate\CategoryManager.cs" />
+    <Compile Include="Concrate\CommentManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tool\" />
+    <Folder Include="Validation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Blog.DataAccessLayer\Blog.DataAccessLayer.csproj">
+      <Project>{bfe4bf44-ddb3-4e4a-aa94-a93171341169}</Project>
+      <Name>Blog.DataAccessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Blog.EntitesLayer\Blog.EntitesLayer.csproj">
+      <Project>{2c936a26-a185-495f-a99b-6e1e9bca3826}</Project>
+      <Name>Blog.EntitesLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
