@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Blog.EntitesLayer.Concrate;
+﻿using System.Collections.Generic;
 
 namespace Blog.BusinessLayer.Abstract
 {
+
+
     public interface IAboutService<About>
     {
         void Add(About about);
@@ -20,5 +17,9 @@ namespace Blog.BusinessLayer.Abstract
         About GetCategory(int id);
 
         About GetFirstOrDefaultAbout();
+        About GetFirstOrDefaultAbout(string photo);
+
+        List<About> GetWithPhotoAll(string photo);
+
     }
 }

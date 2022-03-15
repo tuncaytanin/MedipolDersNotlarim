@@ -12,5 +12,7 @@ namespace Blog.EntitesLayer.Concrate
         public  string  SocialMediaFolowerCount { get; set; }
 
         public  bool SocialMediaStatus { get; set; }
+
+        public  string SocialMediaLink { get; set; }
     }
 }

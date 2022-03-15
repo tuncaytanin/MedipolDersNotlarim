@@ -1,5 +1,6 @@
-﻿@using Blog.EntitesLayer.Concrate
-@model About
+﻿
+@model Blog.WebMvc.ViewModels.AboutViewModel
+
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_DefaultLayout.cshtml";
@@ -15,15 +16,15 @@
                 <div class="blog-grid-top">
 
                     <div class="blog_info_left_grid">
-                        <a href="single.html">
-                            <img src="images/b5.jpg" class="img-fluid" alt="">
+                        <a href="#">
+                            <img src="@Model.About.Photo.PhotoPath" class="img-fluid" alt="">
                         </a>
                     </div>
                     <h3>
-                        @Model.AboutTitle
+                        @Model.About.AboutTitle
                     </h3>
                     <p>
-                        @Model.AboutContent
+                        @Model.About.AboutContent
                     </p>
                 </div>
             </div>
@@ -45,35 +46,19 @@
                     </div>
                     <div class="tech-btm widget_social">
                         <h4>Sosyal Medya Hesaplarımız</h4>
-                        <ul>
-
-                            <li>
-                                <a class="twitter" href="#">
-                                    <i class="fab fa-twitter"></i>
-                                    <span class="count">317K</span> Twitter Followers
-                                </a>
-                            </li>
-                            <li>
-                                <a class="facebook" href="#">
-                                    <i class="fab fa-facebook-f"></i>
-                                    <span class="count">218k</span> Twitter Followers
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dribble" href="#">
-                                    <i class="fab fa-dribbble"></i>
-
-                                    <span class="count">215k</span> Dribble Followers
-                                </a>
-                            </li>
-                            <li>
-                                <a class="pin" href="#">
-                                    <i class="fab fa-pinterest"></i>
-                                    <span class="count">190k</span> Pinterest Followers
-                                </a>
-                            </li>
-
-                        </ul>
+                       
+                            <ul>
+                                @foreach (var social in Model.SocialMedias )
+                                {
+                                <li>
+                                    <a class="@social.SocialMediaName" href="@social.SocialMediaLink">
+                                        <i class="@social.SocialMediaIconClass"></i>
+                                        <span class="count">@social.SocialMediaFolowerCount</span> @social.SocialMediaName Takipçileri
+                                    </a>
+                                </li>
+                                }
+                            </ul>
+                    
                     </div>
 
                 </div>

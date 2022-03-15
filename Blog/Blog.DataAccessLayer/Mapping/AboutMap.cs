@@ -4,6 +4,9 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.DataAccessLayer.Mapping
 {
+
+
+
     public class AboutMap : EntityTypeConfiguration<About>
     {
         public AboutMap()

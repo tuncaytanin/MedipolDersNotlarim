@@ -9,7 +9,9 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.DataAccessLayer.Repository
 {
-   public class CategoryRepository : ICategoryDal
+
+
+    public class CategoryRepository : ICategoryDal
    {
        private BlogContext db;
 

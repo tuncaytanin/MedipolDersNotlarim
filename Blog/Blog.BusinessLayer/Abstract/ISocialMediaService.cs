@@ -3,18 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Blog.EntitesLayer.Concrate;
 
-namespace Blog.DataAccessLayer.Abstract
+namespace Blog.BusinessLayer.Abstract
 {
-    public interface ISocialMediaDal
+    public interface ISocialMediaService<SocialMedia>
     {
-        /*
-         * Generic bir yapı oluşturalım..
-         *
-         *
-         */
-
         void Add(SocialMedia socialMedia);
 
         void Delete(SocialMedia socialMedia);
@@ -24,8 +17,6 @@ namespace Blog.DataAccessLayer.Abstract
         List<SocialMedia> GetAll();
 
         SocialMedia GetSocialMedia(int id);
-
-        SocialMedia GetFirstModel();
 
     }
 }

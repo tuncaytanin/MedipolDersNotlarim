@@ -44,6 +44,7 @@
     <Compile Include="Abstract\IAboutService.cs" />
     <Compile Include="Abstract\ICategoryService.cs" />
     <Compile Include="Abstract\ICommentService.cs" />
+    <Compile Include="Abstract\ISocialMediaService.cs" />
     <Compile Include="Concrate\AboutManager.cs" />
     <Compile Include="Concrate\CategoryManager.cs" />
     <Compile Include="Concrate\CommentManager.cs" />
@@ -62,6 +63,9 @@
       <Project>{2c936a26-a185-495f-a99b-6e1e9bca3826}</Project>
       <Name>Blog.EntitesLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Concrate\SocialMediaManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,3 +29,4 @@ C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\es\DevExpress.
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\ja\DevExpress.Xpo.v20.1.resources.dll
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\ru\DevExpress.Xpo.v20.1.resources.dll
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.addAboutTables.resources
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.addSocialMedia.resources

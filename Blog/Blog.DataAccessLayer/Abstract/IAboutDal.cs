@@ -23,5 +23,8 @@ namespace Blog.DataAccessLayer.Abstract
         About GetAbout(int id);
 
         About GetFirstModel();
+        About GetFirstModel(string photo);
+
+        List<About> GetWithPhotos(string photo);
     }
 }

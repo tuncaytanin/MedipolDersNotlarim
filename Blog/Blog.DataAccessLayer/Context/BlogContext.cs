@@ -3,6 +3,7 @@ using Blog.EntitesLayer.Concrate;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace Blog.DataAccessLayer.Context
     {
         public BlogContext():base("name=DbBlogMvcEntities")
         {
-
+            this.Configuration.LazyLoadingEnabled = false;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -24,6 +25,7 @@ namespace Blog.DataAccessLayer.Context
             modelBuilder.Configurations.Add(new MessageMap());
             modelBuilder.Configurations.Add(new PhotoMap());
             modelBuilder.Configurations.Add(new AboutMap());
+            modelBuilder.Configurations.Add(new SocialMediaMap());
 
         }
         public DbSet<Category> Categories { get; set; }
@@ -35,6 +37,8 @@ namespace Blog.DataAccessLayer.Context
         public DbSet<Photo> Photos { get; set; }
 
         public  DbSet<About> Abouts { get; set; }
+
+        public  DbSet<SocialMedia> SocialMedias { get; set; }
 
     }
 }

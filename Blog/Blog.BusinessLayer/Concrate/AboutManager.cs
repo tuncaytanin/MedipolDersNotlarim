@@ -42,5 +42,15 @@ namespace Blog.BusinessLayer.Manager
         {
             return _dal.GetFirstModel();
         }
+
+        public About GetFirstOrDefaultAbout(string photo)
+        {
+            return _dal.GetFirstModel(photo);
+        }
+
+        public List<About> GetWithPhotoAll(string photo)
+        {
+            return _dal.GetWithPhotos(photo);
+        }
     }
 }

@@ -7,6 +7,8 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.BusinessLayer.Abstract
 {
+
+
     public interface ICategoryService<Category>
     {
         void Add(Category category);

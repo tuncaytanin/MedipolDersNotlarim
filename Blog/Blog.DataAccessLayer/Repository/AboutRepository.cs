@@ -46,5 +46,16 @@ namespace Blog.DataAccessLayer.Repository
         {
             return db.Abouts.SingleOrDefault(x => x.AboutStatus == true);
         }
+
+        public About GetFirstModel(string photo)
+        {
+            return db.Abouts.Include(photo).SingleOrDefault(x => x.AboutStatus == true);
+        }
+
+
+        public List<About> GetWithPhotos(string photo)
+        {
+            return db.Abouts.Include(photo).ToList();
+        }
     }
 }
