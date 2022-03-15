@@ -83,3 +83,14 @@ C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\obj\Debug\Blog.WebMvc.csproj.Core
 C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\obj\Debug\Blog.WebMvc.csproj.CopyComplete
 C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\obj\Debug\Blog.WebMvc.dll
 C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\obj\Debug\Blog.WebMvc.pdb
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\Blog.BusinessLayer.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\Blog.DataAccessLayer.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\Blog.EntitesLayer.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\EntityFramework.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\Blog.BusinessLayer.pdb
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\Blog.DataAccessLayer.pdb
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\Blog.DataAccessLayer.dll.config
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\Blog.EntitesLayer.pdb
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\EntityFramework.xml
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\EntityFramework.SqlServer.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\EntityFramework.SqlServer.xml

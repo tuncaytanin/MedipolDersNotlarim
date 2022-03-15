@@ -16,3 +16,16 @@ C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAcces
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.csproj.GenerateResource.cache
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.MappingRules.resources
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.Mapping2.resources
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\DevExpress.Data.v20.1.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\DevExpress.Xpo.v20.1.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\DevExpress.Data.v20.1.xml
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\DevExpress.Xpo.v20.1.xml
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\de\DevExpress.Data.v20.1.resources.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\es\DevExpress.Data.v20.1.resources.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\ja\DevExpress.Data.v20.1.resources.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\ru\DevExpress.Data.v20.1.resources.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\de\DevExpress.Xpo.v20.1.resources.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\es\DevExpress.Xpo.v20.1.resources.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\ja\DevExpress.Xpo.v20.1.resources.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\ru\DevExpress.Xpo.v20.1.resources.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.addAboutTables.resources

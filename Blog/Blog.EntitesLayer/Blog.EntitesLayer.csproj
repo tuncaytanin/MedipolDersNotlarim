@@ -43,12 +43,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Abstract\IEntity.cs" />
+    <Compile Include="Concrate\About.cs" />
     <Compile Include="Concrate\Post.cs" />
     <Compile Include="Concrate\Category.cs" />
     <Compile Include="Concrate\Comment.cs" />
     <Compile Include="Concrate\Domain.cs" />
     <Compile Include="Concrate\Message.cs" />
     <Compile Include="Concrate\Photo.cs" />
+    <Compile Include="Concrate\SocialMedia.cs" />
     <Compile Include="Concrate\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

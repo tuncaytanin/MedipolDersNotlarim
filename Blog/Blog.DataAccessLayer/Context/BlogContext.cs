@@ -23,6 +23,7 @@ namespace Blog.DataAccessLayer.Context
             modelBuilder.Configurations.Add(new DomainMap());
             modelBuilder.Configurations.Add(new MessageMap());
             modelBuilder.Configurations.Add(new PhotoMap());
+            modelBuilder.Configurations.Add(new AboutMap());
 
         }
         public DbSet<Category> Categories { get; set; }
@@ -32,6 +33,8 @@ namespace Blog.DataAccessLayer.Context
         public DbSet<Message> Messages { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Photo> Photos { get; set; }
+
+        public  DbSet<About> Abouts { get; set; }
 
     }
 }
