@@ -8,7 +8,7 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.BusinessLayer.Manager
 {
-    public class CategoryManager:ICategoryService<Category>
+    public class CategoryManager:ICategoryService
    {
        private ICategoryDal _dal;
 
@@ -16,30 +16,31 @@ namespace Blog.BusinessLayer.Manager
        {
            _dal = dal;
        }
-        public void Add(Category category)
-        {
-            _dal.Add(category);
 
-        }
 
-        public void Delete(Category category)
-        {
-            _dal.Delete(category);
-        }
+       public void Add(Category entity)
+       {
+           _dal.Add(entity);
+       }
 
-        public void Update(Category category)
-        {
-            _dal.Update(category);
-        }
+       public void Delete(Category entity)
+       {
+           _dal.Delete(entity);
+       }
 
-        public List<Category> GetAll()
-        {
-            return _dal.GetAll();
-        }
+       public void Update(Category entity)
+       {
+           _dal.Update(entity);
+       }
 
-        public Category GetCategory(int id)
-        {
-            return _dal.GetCategory(id);
-        }
-    }
+       public List<Category> GetAll()
+       {
+           return _dal.GetAll();
+       }
+
+       public Category GetModel(int id)
+       {
+           return _dal.GetModel(id);
+       }
+   }
 }

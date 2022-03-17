@@ -44,6 +44,7 @@
     <Compile Include="Abstract\IAboutService.cs" />
     <Compile Include="Abstract\ICategoryService.cs" />
     <Compile Include="Abstract\ICommentService.cs" />
+    <Compile Include="Abstract\IGenericService.cs" />
     <Compile Include="Abstract\ISocialMediaService.cs" />
     <Compile Include="Concrate\AboutManager.cs" />
     <Compile Include="Concrate\CategoryManager.cs" />

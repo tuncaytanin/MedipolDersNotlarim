@@ -8,19 +8,8 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.DataAccessLayer.Abstract
 {
-    public interface IAboutDal
+    public interface IAboutDal : IGenericDal<About>
     {
-
-    
-        void Add(About about);
-
-        void Delete(About about);
-
-        void Update(About about);
-
-        List<About> GetAll();
-
-        About GetAbout(int id);
 
         About GetFirstModel();
         About GetFirstModel(string photo);

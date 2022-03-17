@@ -12,19 +12,20 @@ namespace Blog.BusinessLayer.Manager
         {
             _dal = dal;
         }
-        public void Add(Comment comment)
+
+        public void Add(Comment entity)
         {
-            _dal.Add(comment);
+            _dal.Add(entity);
         }
 
-        public void Delete(Comment comment)
+        public void Delete(Comment entity)
         {
-            _dal.Delete(comment);
+            _dal.Delete(entity);
         }
 
-        public void Update(Comment comment)
+        public void Update(Comment entity)
         {
-            _dal.Update(comment);
+            _dal.Update(entity);
         }
 
         public List<Comment> GetAll()
@@ -32,9 +33,9 @@ namespace Blog.BusinessLayer.Manager
             return _dal.GetAll();
         }
 
-        public Comment GetComment(int id)
+        public Comment GetModel(int id)
         {
-            return _dal.GetComment(id);
+            return _dal.GetModel(id);
         }
     }
 }

@@ -6,38 +6,14 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.BusinessLayer.Manager
 {
-    public class AboutManager : IAboutService<About>
+    public class AboutManager : IAboutService
     {
         private IAboutDal _dal;
         public AboutManager(IAboutDal dal)
         {
             _dal = dal;
         }
-        public void Add(About about)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Delete(About about)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Update(About about)
-        {
-            throw new NotImplementedException();
-        }
-
-        public List<About> GetAll()
-        {
-            return _dal.GetAll();
-        }
-
-        public About GetCategory(int id)
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public About GetFirstOrDefaultAbout()
         {
             return _dal.GetFirstModel();
@@ -51,6 +27,31 @@ namespace Blog.BusinessLayer.Manager
         public List<About> GetWithPhotoAll(string photo)
         {
             return _dal.GetWithPhotos(photo);
+        }
+
+        public void Add(About entity)
+        {
+            _dal.Add(entity);
+        }
+
+        public void Delete(About entity)
+        {
+            _dal.Delete(entity);
+        }
+
+        public void Update(About entity)
+        {
+            _dal.Update(entity);
+        }
+
+        public List<About> GetAll()
+        {
+            return _dal.GetAll();
+        }
+
+        public About GetModel(int id)
+        {
+            return _dal.GetModel(id);
         }
     }
 }

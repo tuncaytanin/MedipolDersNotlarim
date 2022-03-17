@@ -14,6 +14,7 @@ namespace Blog.DataAccessLayer.Mapping
         {
             this.Property(x => x.SocialMediaFolowerCount).HasColumnType("nvarchar").HasMaxLength(10);
             this.Property(x => x.SocialMediaIconClass).HasColumnType("nvarchar").HasMaxLength(30);
+            this.Property(x => x.SocialMediaClass).HasColumnType("nvarchar").HasMaxLength(30);
             this.Property(x => x.SocialMediaName).HasColumnType("nvarchar").HasMaxLength(30);
             this.Property(x => x.SocialMediaLink).HasColumnType("nvarchar").HasMaxLength(200);
 

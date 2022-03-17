@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using Blog.BusinessLayer.Concrate;
 using Blog.BusinessLayer.Manager;
+using Blog.DataAccessLayer.EntityFramework;
 using Blog.DataAccessLayer.Repository;
 using Blog.WebMvc.ViewModels;
 
@@ -12,8 +13,8 @@ namespace Blog.WebMvc.Controllers
 {
     public class AboutController : Controller
     {
-        private AboutManager am = new AboutManager(new AboutRepository());
-        private SocialMediaManager sm = new SocialMediaManager(new SocialMediaRepository());
+        private AboutManager am = new AboutManager(new EfAboutRepository());
+        private SocialMediaManager sm = new SocialMediaManager(new EfSocialMediaRepository());
 
         // GET: About
         public ActionResult Index()

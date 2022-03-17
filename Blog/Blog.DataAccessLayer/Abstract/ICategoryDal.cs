@@ -7,16 +7,8 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.DataAccessLayer.Abstract
 {
-    public interface ICategoryDal
+    public interface ICategoryDal : IGenericDal<Category>
     {
-        void Add(Category category);
 
-        void Delete(Category category);
-
-        void Update(Category category);
-
-        List<Category> GetAll();
-
-        Category GetCategory(int id);
     }
 }

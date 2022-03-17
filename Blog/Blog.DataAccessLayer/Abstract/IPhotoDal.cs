@@ -7,7 +7,8 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.DataAccessLayer.Abstract
 {
-    public interface ICommentDal :IGenericDal<Comment>
+    public interface IPhotoDal :IGenericDal<Photo>
     {
+
     }
 }

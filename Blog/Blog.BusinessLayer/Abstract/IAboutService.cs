@@ -1,21 +1,12 @@
 ﻿using System.Collections.Generic;
+using Blog.EntitesLayer.Concrate;
 
 namespace Blog.BusinessLayer.Abstract
 {
 
 
-    public interface IAboutService<About>
+    public interface IAboutService:IGenericService<About>
     {
-        void Add(About about);
-
-        void Delete(About about);
-
-        void Update(About about);
-
-        List<About> GetAll();
-
-        About GetCategory(int id);
-
         About GetFirstOrDefaultAbout();
         About GetFirstOrDefaultAbout(string photo);
 

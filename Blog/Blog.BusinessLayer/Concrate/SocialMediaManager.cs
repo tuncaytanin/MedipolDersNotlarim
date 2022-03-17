@@ -9,7 +9,7 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.BusinessLayer.Concrate
 {
-   public class SocialMediaManager:ISocialMediaService<SocialMedia>
+   public class SocialMediaManager:ISocialMediaService
    {
 
        private ISocialMediaDal _dal;
@@ -18,29 +18,31 @@ namespace Blog.BusinessLayer.Concrate
        {
            _dal = dal;
        }
-        public void Add(SocialMedia socialMedia)
-        {
-            _dal.Add(socialMedia);
-        }
 
-        public void Delete(SocialMedia socialMedia)
-        {
-            _dal.Delete(socialMedia);
-        }
 
-        public void Update(SocialMedia socialMedia)
-        {
-            _dal.Update(socialMedia);
-        }
+       public void Add(SocialMedia entity)
+       {
+           _dal.Add(entity);
+       }
 
-        public List<SocialMedia> GetAll()
-        {
-            return _dal.GetAll();
-        }
+       public void Delete(SocialMedia entity)
+       {
+           _dal.Delete(entity);
+       }
 
-        public SocialMedia GetSocialMedia(int id)
-        {
-            return _dal.GetSocialMedia(id);
-        }
-    }
+       public void Update(SocialMedia entity)
+       {
+          _dal.Update(entity);
+       }
+
+       public List<SocialMedia> GetAll()
+       {
+           return _dal.GetAll();
+       }
+
+       public SocialMedia GetModel(int id)
+       {
+           return _dal.GetModel(id);
+       }
+   }
 }

@@ -5,8 +5,11 @@ namespace Blog.EntitesLayer.Concrate
 {
     public class SocialMedia : IEntity
     {
-        [Key] public int SocialMediaId { get; set; }
+        [Key] 
+        public int SocialMediaId { get; set; }
         public string SocialMediaName { get; set; }
+
+        public string SocialMediaClass { get; set; }
         public string SocialMediaIconClass { get; set; }
 
         public  string  SocialMediaFolowerCount { get; set; }

@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Blog.DataAccessLayer.Abstract;
+using Blog.DataAccessLayer.Repository;
 using Blog.EntitesLayer.Concrate;
 
-namespace Blog.BusinessLayer.Abstract
+namespace Blog.DataAccessLayer.EntityFramework
 {
-    public interface ICommentService :IGenericService<Comment>
+   public class EfPhotoRepository : EntityRepositoryBase<Photo>, IPhotoDal
     {
-
     }
 }

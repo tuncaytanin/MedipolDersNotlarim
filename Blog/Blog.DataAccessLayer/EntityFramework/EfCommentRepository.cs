@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Blog.EntitesLayer.Concrate;
 
-namespace Blog.DataAccessLayer.Abstract
+namespace Blog.DataAccessLayer.EntityFramework
 {
-    public interface ICommentDal :IGenericDal<Comment>
+    public class EfCommentRepository
     {
     }
 }
