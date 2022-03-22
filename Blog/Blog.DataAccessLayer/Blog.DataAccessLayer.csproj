@@ -58,12 +58,14 @@
     <Compile Include="Abstract\ICommentDal.cs" />
     <Compile Include="Abstract\IGenericDal.cs" />
     <Compile Include="Abstract\IPhotoDal.cs" />
+    <Compile Include="Abstract\IPostDal.cs" />
     <Compile Include="Abstract\ISocialMediaDal.cs" />
     <Compile Include="Context\BlogContext.cs" />
     <Compile Include="EntityFramework\EfAboutRepository.cs" />
     <Compile Include="EntityFramework\EfCategoryRepository.cs" />
     <Compile Include="EntityFramework\EfCommentRepository.cs" />
     <Compile Include="EntityFramework\EfPhotoRepository.cs" />
+    <Compile Include="EntityFramework\EfPostRepository.cs" />
     <Compile Include="EntityFramework\EfSocialMediaRepository.cs" />
     <Compile Include="Mapping\AboutMap.cs" />
     <Compile Include="Mapping\CategoryMap.cs" />

@@ -44,8 +44,17 @@ namespace Blog.DataAccessLayer.Repository
             return _object.ToList();
         }
 
-        public TEntity GetModel(int id)
+        public TEntity GetModel(int id , string[] includes)
         {
+            if (includes != null)
+            {
+                foreach (var include in includes)
+                {
+                    _object = _object.Include(include);
+                }
+
+                return _object.Find(id);
+            }
             return _object.Find(id);
         }
     }

@@ -14,7 +14,7 @@ namespace Blog.DataAccessLayer.Context
     {
         public BlogContext():base("name=DbBlogMvcEntities")
         {
-            this.Configuration.LazyLoadingEnabled = false;
+            this.Configuration.LazyLoadingEnabled = true;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

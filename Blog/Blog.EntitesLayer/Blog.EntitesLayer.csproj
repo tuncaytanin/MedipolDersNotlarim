@@ -51,6 +51,7 @@
     <Compile Include="Concrate\Message.cs" />
     <Compile Include="Concrate\Photo.cs" />
     <Compile Include="Concrate\SocialMedia.cs" />
+    <Compile Include="Concrate\Subscripe.cs" />
     <Compile Include="Concrate\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

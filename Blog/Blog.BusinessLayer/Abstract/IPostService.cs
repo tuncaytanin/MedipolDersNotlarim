@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using Blog.EntitesLayer.Concrate;
 
-namespace Blog.DataAccessLayer.Abstract
+namespace Blog.BusinessLayer.Abstract
 {
-    public interface IPhotoDal :IGenericDal<Photo>
+    public interface IPostService : IGenericService<Post>
     {
-
-
+        List<Post> Bloglarim();
     }
 }

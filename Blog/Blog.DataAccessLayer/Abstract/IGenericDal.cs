@@ -17,6 +17,8 @@ namespace Blog.DataAccessLayer.Abstract
 
         List<TEntity> GetAll();
 
+
+      //  List<TEntity> GetEntitesByFilter();
         TEntity GetModel(int id);
     }
 }

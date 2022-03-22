@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using Blog.EntitesLayer.Concrate;
+﻿using Blog.EntitesLayer.Concrate;
+using System.Collections.Generic;
 
 namespace Blog.BusinessLayer.Abstract
 {
