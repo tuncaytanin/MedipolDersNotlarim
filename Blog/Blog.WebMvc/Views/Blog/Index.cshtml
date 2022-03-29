@@ -19,9 +19,8 @@
                         @foreach (var  post in Model)
                         {
 
-
                             <div class="col-lg-4 card">
-                                <a href="single.html">
+                                <a href="/Blog/BlogOku/@post.PostId">
                                     <img src="@post.Photo.PhotoTumbnail" class="card-img-top img-fluid" alt="">
                                 </a>
                                 <div class="card-body">
@@ -50,7 +49,7 @@
                                     <a href="/Blog/BlogOku/@post.PostId" class="btn btn-primary read-m">Devamı</a>
                                 </div>
                             </div>
-
+                     
                         }
                         <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-left mt-4">

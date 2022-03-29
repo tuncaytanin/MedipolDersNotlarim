@@ -63,5 +63,7 @@ namespace Blog.BusinessLayer.Concrate
         {
             return _dal.Bloglar();
         }
+
+
    }
 }

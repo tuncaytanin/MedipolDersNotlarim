@@ -30,7 +30,7 @@ namespace Blog.DataAccessLayer.Context
             modelBuilder.Configurations.Add(new FolowerMap());
             modelBuilder.Configurations.Add(new SubscripeMap());
             modelBuilder.Configurations.Add(new PostMap());
-
+            modelBuilder.Configurations.Add(new UserMap());
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Post> Posts { get; set; }
@@ -47,5 +47,6 @@ namespace Blog.DataAccessLayer.Context
         public  DbSet<Folower> Folowers { get; set; }
 
         public DbSet<Subscripe> Subscripes { get; set; }
+
     }
 }

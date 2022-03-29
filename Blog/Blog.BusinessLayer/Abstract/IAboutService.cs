@@ -3,8 +3,6 @@ using System.Collections.Generic;
 
 namespace Blog.BusinessLayer.Abstract
 {
-
-
     public interface IAboutService:IGenericService<About>
     {
         About GetFirstOrDefaultAbout();

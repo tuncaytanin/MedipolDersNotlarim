@@ -13,10 +13,12 @@ namespace Blog.EntitesLayer.Concrate
         public string CommentTitle { get; set; }
         public string CommentContent { get; set; }
 
+        public DateTime CommentDateTime { get; set; }
         public int PostId { get; set; }
 
         public int UserId { get; set; }
 
         public User User { get; set; }
+        
     }
 }

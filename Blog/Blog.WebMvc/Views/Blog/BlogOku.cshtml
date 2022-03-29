@@ -1,5 +1,5 @@
-﻿@using Blog.EntitesLayer.Concrate
-@model Post
+﻿@using Blog.WebMvc.ViewModels
+@model  BlogOkuViewModel
 @{
     ViewBag.Title = "BlogOku";
     Layout = "~/Views/Shared/_DefaultLayout.cshtml";
@@ -15,24 +15,24 @@
                         <div class="b-grid-top">
                             <div class="blog_info_left_grid">
                                 <a href="single.html">
-                                    <img src="" class="img-fluid" alt="">
+                                    <img src="@Model.Post.Photo.PhotoPath" class="img-fluid" alt="">
                                 </a>
                             </div>
                             <div class="blog-info-middle">
                                 <ul>
                                     <li>
                                         <a href="#">
-                                            <i class="far fa-calendar-alt"></i> @Model.CreateDate.ToString("dd-MMM-yyy HH:mm")
+                                            <i class="far fa-calendar-alt"></i> @Model.Post.CreateDate.ToString("dd-MMM-yyy HH:mm")
                                         </a>
                                     </li>
                                     <li class="mx-2">
                                         <a href="#">
-                                            <i class="far fa-thumbs-up"></i> @Model.LikeCount Beğeni
+                                            <i class="far fa-thumbs-up"></i> @Model.Post.LikeCount Beğeni
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="far fa-comment"></i> @Model.CommentCount Yorum
+                                            <i class="far fa-comment"></i> @Model.Post.CommentCount Yorum
                                         </a>
                                     </li>
 
@@ -40,40 +40,37 @@
                             </div>
                         </div>
 
-                        <h3> @Model.PostTitle
+                        <h3> @Model.Post.PostTitle
                         </h3>
                         <p>
-                            @Model.PostContent
+                            @Model.Post.PostContent
+                            
                         </p>
                         
                     </div>
 
                     <div class="comment-top">
                         <h4>Yorumlar</h4>
-                        <div class="media">
-                            <img src="images/t1.jpg" alt="" class="img-fluid" />
-                            <div class="media-body">
-                                <h5 class="mt-0">Joseph Goh</h5>
-                                <p>
-                                    Lorem Ipsum convallis diam consequat magna vulputate malesuada. id dignissim sapien velit id felis ac cursus eros.
-                                    Cras a ornare elit.
-                                </p>
+                        
+                        @foreach (var comment in @Model.Comments)
+                        {
+                            <div class="media m-2">
+                                <img src="@comment.User.UserPhotoThumpnailPath" alt="" class="img-fluid" />
+                                <div class="media-body">
+                                    <div> <b> @comment.CommentTitle</b> - <h8>  @comment.User.UserName&nbsp;@comment.User.UserLastName &nbsp;@((((DateTime)comment.CommentDateTime).ToString("f"))) </h8> </div>
 
-                                <div class="media mt-3">
-                                    <a class="d-flex pr-3" href="#">
-                                        <img src="images/t2.jpg" alt="" class="img-fluid" />
-                                    </a>
-                                    <div class="media-body">
-                                        <h5 class="mt-0">Richard Spark</h5>
-                                        <p>
-                                            Lorem Ipsum convallis diam consequat magna vulputate malesuada. id dignissim sapien velit id felis ac cursus eros.
-                                            Cras a ornare elit.
-                                        </p>
-                                    </div>
+
+                                    <p>
+                                        @comment.CommentContent
+                                    </p>
                                 </div>
                             </div>
-                        </div>
+                        }
+
                     </div>
+                    
+                    
+
                     <div class="comment-top">
                         <h4>Leave a Comment</h4>
                         <div class="comment-bottom">
@@ -102,44 +99,30 @@
                         
                         <div class="tech-btm">
                             <h4> Son Yazıları</h4>
-
-                            <div class="blog-grids row mb-3">
-                                <div class="col-md-5 blog-grid-left">
-                                    <a href="single.html">
-                                        <img src="images/1.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 blog-grid-right">
-
-                                    <h5>
-                                        <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-                                    </h5>
-                                    <div class="sub-meta">
-                                        <span>
-                                            <i class="far fa-clock"></i> 20 Jan, 2018
-                                        </span>
+                            @foreach (var post in @Model.Last3Posts)
+                            {
+                                <div class="blog-grids row mb-3">
+                                    <div class="col-md-5 blog-grid-left">
+                                        <a href="single.html">
+                                            <img src="@post.Photo.PhotoTumbnail" class="img-fluid" alt="">
+                                        </a>
                                     </div>
-                                </div>
+                                    <div class="col-md-7 blog-grid-right">
 
-                            </div>
-                            <div class="blog-grids row mb-3">
-                                <div class="col-md-5 blog-grid-left">
-                                    <a href="single.html">
-                                        <img src="images/6.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-7 blog-grid-right">
-                                    <h5>
-                                        <a href="single.html">Pellentesque dui, non felis. Maecenas male non felis </a>
-                                    </h5>
-                                    <div class="sub-meta">
-                                        <span>
-                                            <i class="far fa-clock"></i> 20 Feb, 2018
-                                        </span>
+                                        <h5>
+                                            <a href="single.html">@post.PostTitle</a>
+                                        </h5>
+                                        <div class="sub-meta">
+                                            <span>
+                                                <i class="far fa-clock"></i> @post.CreateDate
+                                            </span>
+                                        </div>
                                     </div>
-                                </div>
 
-                            </div>
+                                </div>
+       
+                            }
+
                         </div>
                         <div class="single-gd my-5 tech-btm">
                             <h4>Our Progress</h4>

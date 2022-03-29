@@ -11,5 +11,7 @@ namespace Blog.DataAccessLayer.Abstract
     {
 
         List<Post> Bloglar();
+
+
     }
 }

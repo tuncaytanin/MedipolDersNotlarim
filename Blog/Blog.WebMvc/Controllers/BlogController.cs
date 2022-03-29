@@ -4,8 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Blog.BusinessLayer.Concrate;
+using Blog.BusinessLayer.Manager;
 using Blog.DataAccessLayer.EntityFramework;
 using Blog.EntitesLayer.Concrate;
+using Blog.WebMvc.ViewModels;
 
 namespace Blog.WebMvc.Controllers
 {
@@ -13,6 +15,7 @@ namespace Blog.WebMvc.Controllers
     {
         // GET: Blog
         private PostManager pm = new PostManager(new EfPostRepository());
+        private CommentManager cm = new CommentManager(new EfCommentRepository());
         
         public ActionResult Index()
         {
@@ -23,8 +26,18 @@ namespace Blog.WebMvc.Controllers
         public ActionResult BlogOku(int id)
         {
 
-            Post post = pm.GetModelById(id);
-            return View(post);
+            BlogOkuViewModel blokOkuViewModel = new BlogOkuViewModel();
+            string[] includes1 = {"Photo","Writer"};
+            blokOkuViewModel.Post = pm.GetModelByFilter(x => x.PostId == id, includes1);
+       
+            string[] includes2 = { "User" };
+            blokOkuViewModel.Comments = cm.GetAllByFilter(x => x.PostId == id, includes2);
+
+            string[] includes3 = { "Photo" };
+            blokOkuViewModel.Last3Posts =
+                pm.GetAllByFilter(x => x.WriterId == blokOkuViewModel.Post.WriterId, includes3).Take(3);
+
+            return View(blokOkuViewModel);
         }
     }
 }

@@ -26,6 +26,9 @@ namespace Blog.EntitesLayer.Concrate
 
         public virtual  ICollection<Post> Posts { get; set; }
 
+        public string UserPhotoName { get; set; }
+        public string UserPhotoPath { get; set; }
+        public string UserPhotoThumpnailPath { get; set; }
 
     }
 }

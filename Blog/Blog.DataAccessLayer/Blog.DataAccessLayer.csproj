@@ -60,6 +60,7 @@
     <Compile Include="Abstract\IPhotoDal.cs" />
     <Compile Include="Abstract\IPostDal.cs" />
     <Compile Include="Abstract\ISocialMediaDal.cs" />
+    <Compile Include="Abstract\IUserDal.cs" />
     <Compile Include="Context\BlogContext.cs" />
     <Compile Include="EntityFramework\EfAboutRepository.cs" />
     <Compile Include="EntityFramework\EfCategoryRepository.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="EntityFramework\EfPhotoRepository.cs" />
     <Compile Include="EntityFramework\EfPostRepository.cs" />
     <Compile Include="EntityFramework\EfSocialMediaRepository.cs" />
+    <Compile Include="EntityFramework\EfUserRepository.cs" />
     <Compile Include="Mapping\AboutMap.cs" />
     <Compile Include="Mapping\CategoryMap.cs" />
     <Compile Include="Mapping\CommentMap.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Mapping\PostMap.cs" />
     <Compile Include="Mapping\SocialMediaMap.cs" />
     <Compile Include="Mapping\SubscripeMap.cs" />
+    <Compile Include="Mapping\UserMap.cs" />
     <Compile Include="Migrations\202203011244586_createDb.cs" />
     <Compile Include="Migrations\202203011244586_createDb.designer.cs">
       <DependentUpon>202203011244586_createDb.cs</DependentUpon>
@@ -112,6 +115,22 @@
     <Compile Include="Migrations\202203241410388_updateRelation.cs" />
     <Compile Include="Migrations\202203241410388_updateRelation.designer.cs">
       <DependentUpon>202203241410388_updateRelation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203291125390_addUserPhotoTable.cs" />
+    <Compile Include="Migrations\202203291125390_addUserPhotoTable.designer.cs">
+      <DependentUpon>202203291125390_addUserPhotoTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203291130112_alterUserPhoto.cs" />
+    <Compile Include="Migrations\202203291130112_alterUserPhoto.designer.cs">
+      <DependentUpon>202203291130112_alterUserPhoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203291154259_dropUserPhotoAndAlterUser.cs" />
+    <Compile Include="Migrations\202203291154259_dropUserPhotoAndAlterUser.designer.cs">
+      <DependentUpon>202203291154259_dropUserPhotoAndAlterUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203291205561_alterComment.cs" />
+    <Compile Include="Migrations\202203291205561_alterComment.designer.cs">
+      <DependentUpon>202203291205561_alterComment.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,6 +173,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203241410388_updateRelation.resx">
       <DependentUpon>202203241410388_updateRelation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203291125390_addUserPhotoTable.resx">
+      <DependentUpon>202203291125390_addUserPhotoTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203291130112_alterUserPhoto.resx">
+      <DependentUpon>202203291130112_alterUserPhoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203291154259_dropUserPhotoAndAlterUser.resx">
+      <DependentUpon>202203291154259_dropUserPhotoAndAlterUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203291205561_alterComment.resx">
+      <DependentUpon>202203291205561_alterComment.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
