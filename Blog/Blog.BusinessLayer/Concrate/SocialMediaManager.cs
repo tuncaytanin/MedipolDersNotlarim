@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Blog.BusinessLayer.Abstract;
@@ -30,6 +31,11 @@ namespace Blog.BusinessLayer.Concrate
            _dal.Delete(entity);
        }
 
+       public void DeleteByFilter(Expression<Func<SocialMedia, bool>> filter)
+       {
+           _dal.DeleteByFilter(filter);
+       }
+
        public void Update(SocialMedia entity)
        {
           _dal.Update(entity);
@@ -40,9 +46,20 @@ namespace Blog.BusinessLayer.Concrate
            return _dal.GetAll();
        }
 
-       public SocialMedia GetModel(int id)
+       public List<SocialMedia> GetAllByFilter(Expression<Func<SocialMedia, bool>> filter, string[] includes)
        {
-           return _dal.GetModel(id);
+           return _dal.GetAllByFilter(filter, includes);
        }
+
+       public SocialMedia GetModelById(int id)
+       {
+           return _dal.GetModelById(id);
+       }
+
+       public SocialMedia GetModelByFilter(Expression<Func<SocialMedia, bool>> filter, string[] includes)
+       {
+           return _dal.GetModelByFilter(filter, includes);
+       }
+
    }
 }

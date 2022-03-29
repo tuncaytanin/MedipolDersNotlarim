@@ -24,5 +24,7 @@ namespace Blog.EntitesLayer.Concrate
         public  int LikeCount { get; set; }
 
         public DateTime CreateDate { get; set; }
+
+        public  virtual User Writer { get; set; }
     }
 }

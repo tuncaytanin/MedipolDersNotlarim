@@ -19,5 +19,9 @@ namespace Blog.EntitesLayer.Concrate
         /// Abone bülteni email
         /// </summary>
         public string Email { get; set; }
+
+        public  bool IsValid { get; set; }
+
+        public string ActivationCode { get; set; }
     }
 }

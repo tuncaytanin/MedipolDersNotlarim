@@ -23,7 +23,7 @@ namespace Blog.WebMvc.Controllers
         public ActionResult BlogOku(int id)
         {
 
-            Post post = pm.GetModel(id);
+            Post post = pm.GetModelById(id);
             return View(post);
         }
     }

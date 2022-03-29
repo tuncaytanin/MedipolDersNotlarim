@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Abstract\IEntity.cs" />
     <Compile Include="Concrate\About.cs" />
+    <Compile Include="Concrate\Flower.cs" />
     <Compile Include="Concrate\Post.cs" />
     <Compile Include="Concrate\Category.cs" />
     <Compile Include="Concrate\Comment.cs" />

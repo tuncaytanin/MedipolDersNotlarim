@@ -31,3 +31,6 @@ C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\bin\Debug\ru\DevExpress.
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.addAboutTables.resources
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.addSocialMedia.resources
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.addSocialMediaClassToTable.resources
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.AddSubscripeAndFolowers.resources
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.addRelationUserToPost.resources
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.updateRelation.resources

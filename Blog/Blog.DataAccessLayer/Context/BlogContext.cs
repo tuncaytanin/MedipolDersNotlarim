@@ -27,6 +27,10 @@ namespace Blog.DataAccessLayer.Context
             modelBuilder.Configurations.Add(new AboutMap());
             modelBuilder.Configurations.Add(new SocialMediaMap());
 
+            modelBuilder.Configurations.Add(new FolowerMap());
+            modelBuilder.Configurations.Add(new SubscripeMap());
+            modelBuilder.Configurations.Add(new PostMap());
+
         }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Post> Posts { get; set; }
@@ -39,6 +43,9 @@ namespace Blog.DataAccessLayer.Context
         public  DbSet<About> Abouts { get; set; }
 
         public  DbSet<SocialMedia> SocialMedias { get; set; }
+        
+        public  DbSet<Folower> Folowers { get; set; }
 
+        public DbSet<Subscripe> Subscripes { get; set; }
     }
 }

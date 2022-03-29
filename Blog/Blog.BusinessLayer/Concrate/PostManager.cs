@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Blog.BusinessLayer.Abstract;
@@ -18,17 +19,22 @@ namespace Blog.BusinessLayer.Concrate
         }
         public void Add(Post entity)
         {
-            throw new NotImplementedException();
+           _dal.Add(entity);
         }
 
         public void Delete(Post entity)
         {
-            throw new NotImplementedException();
+            _dal.Delete(entity);
+        }
+
+        public void DeleteByFilter(Expression<Func<Post, bool>> filter)
+        {
+            _dal.DeleteByFilter(filter);
         }
 
         public void Update(Post entity)
         {
-            throw new NotImplementedException();
+            _dal.Update(entity);
         }
 
         public List<Post> GetAll()
@@ -36,10 +42,22 @@ namespace Blog.BusinessLayer.Concrate
             return _dal.GetAll();
         }
 
-        public Post GetModel(int id)
+        public List<Post> GetAllByFilter(Expression<Func<Post, bool>> filter, string[] includes)
         {
-            return _dal.GetModel(id);
+            return _dal.GetAllByFilter(filter, includes);
         }
+
+        public Post GetModelById(int id)
+        {
+            return _dal.GetModelById(id);
+        }
+
+        public Post GetModelByFilter(Expression<Func<Post, bool>> filter, string[] includes)
+        {
+            return _dal.GetModelByFilter(filter, includes);
+        }
+
+
 
         public List<Post> Bloglarim()
         {

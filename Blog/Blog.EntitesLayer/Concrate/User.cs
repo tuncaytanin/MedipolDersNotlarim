@@ -24,6 +24,8 @@ namespace Blog.EntitesLayer.Concrate
 
         public DateTime CreateDate { get; set; }
 
+        public virtual  ICollection<Post> Posts { get; set; }
+
 
     }
 }

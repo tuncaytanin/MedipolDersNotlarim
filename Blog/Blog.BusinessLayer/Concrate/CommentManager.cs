@@ -1,4 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq.Expressions;
 using Blog.BusinessLayer.Abstract;
 using Blog.DataAccessLayer.Abstract;
 using Blog.EntitesLayer.Concrate;
@@ -23,6 +25,11 @@ namespace Blog.BusinessLayer.Manager
             _dal.Delete(entity);
         }
 
+        public void DeleteByFilter(Expression<Func<Comment, bool>> filter)
+        {
+            _dal.DeleteByFilter(filter);
+        }
+
         public void Update(Comment entity)
         {
             _dal.Update(entity);
@@ -33,9 +40,20 @@ namespace Blog.BusinessLayer.Manager
             return _dal.GetAll();
         }
 
-        public Comment GetModel(int id)
+        public List<Comment> GetAllByFilter(Expression<Func<Comment, bool>> filter, string[] includes)
         {
-            return _dal.GetModel(id);
+            return _dal.GetAllByFilter(filter, includes);
         }
+
+        public Comment GetModelById(int id)
+        {
+            return _dal.GetModelById(id);
+        }
+
+        public Comment GetModelByFilter(Expression<Func<Comment, bool>> filter, string[] includes)
+        {
+            return _dal.GetModelByFilter(filter, includes);
+        }
+
     }
 }

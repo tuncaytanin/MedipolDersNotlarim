@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Blog.DataAccessLayer.Abstract;
@@ -33,6 +34,11 @@ namespace Blog.DataAccessLayer.Repository
             db.SaveChanges();
         }
 
+        public void DeleteByFilter(Expression<Func<TEntity, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Update(TEntity entity)
         {
             db.Entry(entity).State = EntityState.Modified;
@@ -44,18 +50,42 @@ namespace Blog.DataAccessLayer.Repository
             return _object.ToList();
         }
 
-        public TEntity GetModel(int id , string[] includes)
+        public List<TEntity> GetAllByFilter(Expression<Func<TEntity, bool>> filter, string[] includes)
+        {
+            if (includes !=null)
+            {
+                var liste = db.Set<TEntity>().Where(filter);
+                foreach (var include in includes)
+                {
+                    liste = liste.Include(include);
+                }
+
+                return liste.ToList();
+            }
+            return _object.Where(filter).ToList();
+        }
+
+
+
+        public TEntity GetModelById(int id)
+        {
+            return _object.Find(id);
+        }
+
+        public TEntity GetModelByFilter(Expression<Func<TEntity,bool>> filter , string[] includes)
         {
             if (includes != null)
             {
+                var liste = db.Set<TEntity>().AsNoTracking().Where(filter);
                 foreach (var include in includes)
                 {
-                    _object = _object.Include(include);
+                    liste = liste.Include(include);
                 }
 
-                return _object.Find(id);
+                return liste.SingleOrDefault();
             }
-            return _object.Find(id);
+
+            return _object.SingleOrDefault(filter);
         }
     }
 }

@@ -71,9 +71,12 @@
     <Compile Include="Mapping\CategoryMap.cs" />
     <Compile Include="Mapping\CommentMap.cs" />
     <Compile Include="Mapping\DomainMap.cs" />
+    <Compile Include="Mapping\FolowerMap.cs" />
     <Compile Include="Mapping\MessageMap.cs" />
     <Compile Include="Mapping\PhotoMap.cs" />
+    <Compile Include="Mapping\PostMap.cs" />
     <Compile Include="Mapping\SocialMediaMap.cs" />
+    <Compile Include="Mapping\SubscripeMap.cs" />
     <Compile Include="Migrations\202203011244586_createDb.cs" />
     <Compile Include="Migrations\202203011244586_createDb.designer.cs">
       <DependentUpon>202203011244586_createDb.cs</DependentUpon>
@@ -97,6 +100,18 @@
     <Compile Include="Migrations\202203171315012_addSocialMediaClassToTable.cs" />
     <Compile Include="Migrations\202203171315012_addSocialMediaClassToTable.designer.cs">
       <DependentUpon>202203171315012_addSocialMediaClassToTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203241343323_AddSubscripeAndFolowers.cs" />
+    <Compile Include="Migrations\202203241343323_AddSubscripeAndFolowers.designer.cs">
+      <DependentUpon>202203241343323_AddSubscripeAndFolowers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203241408085_addRelationUserToPost.cs" />
+    <Compile Include="Migrations\202203241408085_addRelationUserToPost.designer.cs">
+      <DependentUpon>202203241408085_addRelationUserToPost.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202203241410388_updateRelation.cs" />
+    <Compile Include="Migrations\202203241410388_updateRelation.designer.cs">
+      <DependentUpon>202203241410388_updateRelation.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -130,6 +145,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203171315012_addSocialMediaClassToTable.resx">
       <DependentUpon>202203171315012_addSocialMediaClassToTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203241343323_AddSubscripeAndFolowers.resx">
+      <DependentUpon>202203241343323_AddSubscripeAndFolowers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203241408085_addRelationUserToPost.resx">
+      <DependentUpon>202203241408085_addRelationUserToPost.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203241410388_updateRelation.resx">
+      <DependentUpon>202203241410388_updateRelation.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

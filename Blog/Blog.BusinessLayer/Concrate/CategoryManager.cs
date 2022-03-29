@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 using Blog.BusinessLayer.Abstract;
@@ -28,6 +30,11 @@ namespace Blog.BusinessLayer.Manager
            _dal.Delete(entity);
        }
 
+       public void DeleteByFilter(Expression<Func<Category, bool>> filter)
+       {
+           _dal.DeleteByFilter(filter);
+       }
+
        public void Update(Category entity)
        {
            _dal.Update(entity);
@@ -38,9 +45,20 @@ namespace Blog.BusinessLayer.Manager
            return _dal.GetAll();
        }
 
-       public Category GetModel(int id)
+       public List<Category> GetAllByFilter(Expression<Func<Category, bool>> filter, string[] includes)
        {
-           return _dal.GetModel(id);
+           return _dal.GetAllByFilter(filter, includes);
+        }
+
+       public Category GetModelById(int id)
+       {
+           return _dal.GetModelById(id);
        }
+
+       public Category GetModelByFilter(Expression<Func<Category, bool>> filter, string[] includes)
+       {
+           return _dal.GetModelByFilter(filter, includes);
+       }
+
    }
 }
