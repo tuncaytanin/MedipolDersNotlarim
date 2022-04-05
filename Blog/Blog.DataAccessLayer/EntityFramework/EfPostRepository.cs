@@ -15,5 +15,10 @@ namespace Blog.DataAccessLayer.EntityFramework
         {
             return db.Posts.Include("Photo").ToList();
         }
+
+        public List<Post> Last3Blogs()
+        {
+            return db.Posts.Include("Photo").Take(3).ToList();
+        }
     }
 }

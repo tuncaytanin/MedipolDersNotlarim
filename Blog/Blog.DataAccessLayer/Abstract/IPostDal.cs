@@ -12,6 +12,7 @@ namespace Blog.DataAccessLayer.Abstract
 
         List<Post> Bloglar();
 
+        List<Post> Last3Blogs();
 
     }
 }

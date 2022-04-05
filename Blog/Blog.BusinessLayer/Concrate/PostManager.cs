@@ -64,6 +64,9 @@ namespace Blog.BusinessLayer.Concrate
             return _dal.Bloglar();
         }
 
-
+        public List<Post> Last3Blogs()
+        {
+            return _dal.Last3Blogs();
+        }
    }
 }

@@ -6,3 +6,6 @@
  -Yorumlar
  -Duyurular
  -Fotogrflar
+
+
+ todo Kayıt olduğunda başarılı, hata aldığında hata mesajını bu ekranda gösterelim...

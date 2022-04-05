@@ -1,0 +1,30 @@
+﻿
+@model IEnumerable<Blog.EntitesLayer.Concrate.Post>
+
+<div class="tech-btm">
+    <h3>Son Postlar</h3>
+    @foreach (var post in Model)
+    {
+        
+
+        <div class="blog-grids row mb-3">
+            <div class="col-md-5 blog-grid-left">
+                <a href="/Blog/BlogRead/@post.PostId">
+                    <img src="@post.Photo.PhotoTumbnail" class="img-fluid" alt="">
+                </a>
+            </div>
+            <div class="col-md-7 blog-grid-right">
+
+                <h5>
+                    <a href="/Blog/BlogRead/@post.PostId">@(post.PostTitle.Length >= 80 ? post.PostTitle.Substring(0, 80) : post.PostTitle.ToString()) ... </a>
+                </h5>
+                <div class="sub-meta">
+                    <span>
+                        <i class="far fa-clock"></i> @post.CreateDate.ToString("yyyy MMMM dd")
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    }
+</div>

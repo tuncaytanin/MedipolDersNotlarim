@@ -10,5 +10,7 @@ namespace Blog.BusinessLayer.Abstract
     public interface IPostService : IGenericService<Post>
     {
         List<Post> Bloglarim();
+
+        List<Post> Last3Blogs();
     }
 }

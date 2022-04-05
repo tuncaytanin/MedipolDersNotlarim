@@ -23,7 +23,7 @@ namespace Blog.WebMvc.Controllers
             return View(posts);
         }
 
-        public ActionResult BlogOku(int id)
+        public ActionResult BlogRead(int id)
         {
 
             BlogOkuViewModel blokOkuViewModel = new BlogOkuViewModel();
@@ -41,6 +41,12 @@ namespace Blog.WebMvc.Controllers
                 pm.GetAllByFilter(x => x.CategoriId == blokOkuViewModel.Post.CategoriId, includes3).Take(3);
 
             return View(blokOkuViewModel);
+        }
+
+        public PartialViewResult Last3Post()
+        {
+            var posts = pm.Last3Blogs();
+            return PartialView(posts);
         }
     }
 }
