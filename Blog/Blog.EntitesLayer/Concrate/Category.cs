@@ -35,5 +35,7 @@ namespace Blog.EntitesLayer.Concrate
         /// </summary>
         public bool CategoryStatus { get; set; }
 
+        public  virtual  ICollection<Post> Posts { get; set; }
+
     }
 }

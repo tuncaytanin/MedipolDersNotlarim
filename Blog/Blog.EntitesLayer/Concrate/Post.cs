@@ -26,5 +26,9 @@ namespace Blog.EntitesLayer.Concrate
         public DateTime CreateDate { get; set; }
 
         public  virtual User Writer { get; set; }
+
+        public  int CategoriId { get; set; }
+
+        public  virtual  Category Category { get; set; }
     }
 }

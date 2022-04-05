@@ -132,6 +132,10 @@
     <Compile Include="Migrations\202203291205561_alterComment.designer.cs">
       <DependentUpon>202203291205561_alterComment.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202203311313357_addrealationPostToCategory.cs" />
+    <Compile Include="Migrations\202203311313357_addrealationPostToCategory.designer.cs">
+      <DependentUpon>202203311313357_addrealationPostToCategory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\EntityRepositoryBase.cs" />
@@ -185,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202203291205561_alterComment.resx">
       <DependentUpon>202203291205561_alterComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202203311313357_addrealationPostToCategory.resx">
+      <DependentUpon>202203311313357_addrealationPostToCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

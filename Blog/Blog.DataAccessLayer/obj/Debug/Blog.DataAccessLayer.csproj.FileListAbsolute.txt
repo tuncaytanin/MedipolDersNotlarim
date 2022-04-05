@@ -38,3 +38,4 @@ C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAcces
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.alterUserPhoto.resources
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.dropUserPhotoAndAlterUser.resources
 C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.alterComment.resources
+C:\github\MedipolDersNotlarim\Blog\Blog.DataAccessLayer\obj\Debug\Blog.DataAccessLayer.Migrations.addrealationPostToCategory.resources

@@ -13,6 +13,8 @@ namespace Blog.WebMvc.ViewModels
 
         public  IEnumerable<Comment> Comments { get; set; }
 
-        public  IEnumerable<Post> Last3Posts { get; set; }
+        public  IEnumerable<Post> Last3PostsByWriterId { get; set; }
+
+        public  IEnumerable<Post> Last3PostsByCategoryId { get; set; }
     }
 }

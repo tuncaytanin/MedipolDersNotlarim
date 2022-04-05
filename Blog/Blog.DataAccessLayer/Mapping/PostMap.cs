@@ -14,6 +14,7 @@ namespace Blog.DataAccessLayer.Mapping
 
 
             this.HasRequired(x => x.Writer).WithMany(x => x.Posts).HasForeignKey(x => x.WriterId);
+            this.HasRequired(x => x.Category).WithMany(x => x.Posts).HasForeignKey(x => x.CategoriId);
         }
     }
 }

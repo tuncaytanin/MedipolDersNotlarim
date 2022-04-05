@@ -27,15 +27,18 @@ namespace Blog.WebMvc.Controllers
         {
 
             BlogOkuViewModel blokOkuViewModel = new BlogOkuViewModel();
-            string[] includes1 = {"Photo","Writer"};
+            string[] includes1 = {"Photo","Writer","Category"};
             blokOkuViewModel.Post = pm.GetModelByFilter(x => x.PostId == id, includes1);
        
             string[] includes2 = { "User" };
             blokOkuViewModel.Comments = cm.GetAllByFilter(x => x.PostId == id, includes2);
 
             string[] includes3 = { "Photo" };
-            blokOkuViewModel.Last3Posts =
+            blokOkuViewModel.Last3PostsByWriterId =
                 pm.GetAllByFilter(x => x.WriterId == blokOkuViewModel.Post.WriterId, includes3).Take(3);
+
+            blokOkuViewModel.Last3PostsByCategoryId =
+                pm.GetAllByFilter(x => x.CategoriId == blokOkuViewModel.Post.CategoriId, includes3).Take(3);
 
             return View(blokOkuViewModel);
         }
