@@ -149,6 +149,7 @@
     <Compile Include="Controllers\SocialMediaController.cs" />
     <Compile Include="Controllers\SubscripeController.cs" />
     <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\UserPanelController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -2708,6 +2709,8 @@
     <Content Include="Views\Blog\BlogRead.cshtml" />
     <Content Include="Views\Blog\Last3Post.cshtml" />
     <Content Include="Views\SocialMedia\SocialMediaInfo.cshtml" />
+    <Content Include="Views\Shared\_UserPanelLayout.cshtml" />
+    <Content Include="Views\UserPanel\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
