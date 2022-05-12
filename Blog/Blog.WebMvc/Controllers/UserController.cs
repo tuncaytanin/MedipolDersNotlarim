@@ -43,5 +43,28 @@ namespace Blog.WebMvc.Controllers
             um.Add(pUser);
             return RedirectToAction("Index", "Login");
         }
+
+
+        [HttpGet]
+        public ActionResult FormUser(int id)
+        {
+            var user = um.GetModelById(4);
+
+
+            return View(user);
+        }
+
+        [HttpPost]
+        public ActionResult FormUser(User pUser)
+        {
+            var user = um.GetModelById(pUser.UserId);
+            user.UserName = pUser.UserName;
+            user.UserLastName = pUser.UserLastName;
+            user.UserEmail = pUser.UserEmail;
+            user.UserPassword = pUser.UserPassword;
+            um.Update(user);
+
+            return RedirectToAction("Index", "UserPanel");
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using Blog.EntitesLayer.Abstract;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,9 +10,10 @@ namespace Blog.EntitesLayer.Concrate
 {
     public class User: IEntity
     {
-
+        [Key]
         public int UserId { get; set; }
 
+        [Display(Name="Kullanıcı Adı")]
         public string UserName { get; set; }
         public string UserLastName { get; set; }
         public string UserEmail { get; set; }

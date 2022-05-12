@@ -94,3 +94,5 @@ C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\Blog.EntitesLayer.pdb
 C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\EntityFramework.xml
 C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\EntityFramework.SqlServer.dll
 C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\EntityFramework.SqlServer.xml
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\AutoMapper.dll
+C:\github\MedipolDersNotlarim\Blog\Blog.WebMvc\bin\AutoMapper.xml
