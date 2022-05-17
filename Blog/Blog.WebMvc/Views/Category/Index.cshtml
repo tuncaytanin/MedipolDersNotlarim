@@ -1,0 +1,45 @@
+﻿@model List<Blog.EntitesLayer.Concrate.Category>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+}
+
+<div class="text-center col-lg-8 mx-auto col-md-8 col-sm-12">
+    <h2 class="text-white mt-2 border border-3 border-danger" style="background: #343A40"> Kategoriler</h2>
+    
+    <div class="border border-4 border-primary">
+
+        <table class="table table-bordered  mb-0">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Adı</th>
+                <th>Durumu</th>
+                <th>Islem</th>
+            </tr>
+            </thead>
+            <tbody >
+            @foreach (var category in Model)
+            {
+                <tr>
+                    <td>@category.CategoryId</td>
+                    <td>@category.CategoryName</td>
+                    <td>@category.CategoryStatus</td>
+                    <td >
+                        <a class="btn btn-primary" href="/Category/Update/@category.CategoryId">Güncelle</a>
+                        <a class="btn btn-danger" href="/Category/Delete/@category.CategoryId"> Sil</a>
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+<div class=" col-lg-8 mx-auto col-md-8 col-sm-12 mt-2 ">
+    <a class="btn btn-success" href="/Category/New/"> Ekle </a>
+</div>
+
+

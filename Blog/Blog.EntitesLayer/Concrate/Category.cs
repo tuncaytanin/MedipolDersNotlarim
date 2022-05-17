@@ -27,7 +27,7 @@ namespace Blog.EntitesLayer.Concrate
         /// Kategori adını tutar.
         /// </summary>
         /// 
-
+        [Display(Name = "Kategori Adı")]
         public string CategoryName { get; set; }
 
         /// <summary>
