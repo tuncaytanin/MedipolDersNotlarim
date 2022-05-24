@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Blog.EntitesLayer.Concrate.About>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+}
+
+<div class="text-center  mx-auto ">
+    <h2 class="text-white mt-2 border border-3 border-danger" style="background: #343A40"> Hakkımda</h2>
+
+    <div class="border border-4 border-primary">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Başlık</th>
+                    <th>İçerik</th>
+                    <th>Durumu</th>
+                    <th>Islem</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var about in Model)
+                {
+                <tr>
+                    <td>@about.AboutId</td>
+                    <td>@about.AboutTitle</td>
+                    <td>@(about.AboutContent.Length > 150 ? about.AboutContent.Substring(0, 150) :about.AboutContent) </td>
+                    <td>@about.AboutStatus</td>
+                    <td>
+                        <a class="btn btn-primary" href="/About/Update/@about.AboutId">Güncelle</a>
+                        <a class="btn btn-danger" href="/About/Delete/@about.AboutId"> Sil</a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+<div class="mt-2">
+    <a class="btn btn-success" href="/About/New/"> Ekle </a>
+</div>
+
+
+
+

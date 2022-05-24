@@ -1,0 +1,49 @@
+﻿@model Blog.EntitesLayer.Concrate.About
+@{
+    ViewBag.Title = "FormAbout";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+
+    string islem = "";
+    if (Model.AboutId == 0)
+    {
+        islem = "Ekle";
+    }
+    else
+    {
+        islem = "Güncelle";
+    }
+}
+
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title ">Hakkımda @islem  Sayfası</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+
+    @using (Html.BeginForm("AddOrUpdate", "About", FormMethod.Post))
+    {
+
+
+        <div class="card-body">
+
+            @Html.HiddenFor(x => x.AboutId)
+            @Html.HiddenFor(x => x.PhotoId)
+            <div class="form-group">
+                @Html.LabelFor(x => x.AboutTitle)
+                @Html.TextBoxFor(x => x.AboutTitle, new { @class = "form-control", placeholder = "Başlığı giriniz" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(x => x.AboutContent)
+                @Html.TextAreaFor(x => x.AboutContent, new { @class = "form-control", placeholder = "Açıklamayı giriniz" ,rows=10 })
+            </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">@islem</button>
+        </div>
+    }
+</div>
+

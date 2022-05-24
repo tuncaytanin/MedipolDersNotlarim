@@ -15,7 +15,8 @@ namespace Blog.WebMvc.Controllers
         // GET: User
         public ActionResult Index()
         {
-            return View();
+            var users = um.GetAll();
+            return View(users);
         }
 
         [HttpGet]

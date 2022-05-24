@@ -17,6 +17,6 @@ namespace Blog.EntitesLayer.Concrate
         public bool AboutStatus { get; set; }
         public int PhotoId { get; set; }
 
-        public Photo Photo { get; set; }
+        public virtual Photo Photo { get; set; }
     }
 }

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Blog.EntitesLayer.Concrate.Domain>
+@{
+    ViewBag.Title = "List";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+}
+
+<div class="text-center  mx-auto ">
+    <h2 class="text-white mt-2 border border-3 border-danger" style="background: #343A40"> Yetkiler</h2>
+
+    <div class="border border-4 border-primary">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Adı</th>
+                    <th>Durumu</th>
+                    <th>Islem</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var domain in Model)
+                {
+                <tr>
+                    <td>@domain.DomainId</td>
+                    <td>@domain.DomainName</td>
+                    <td>@domain.DomainStatus</td>
+                    <td class="project-actions text-right">
+                        <a class="btn btn-info btn-sm" href="/Domain/Update/@domain.DomainId">
+                            <i class="fas fa-pencil-alt">
+                            </i>
+                            Güncelle
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="/Domain/Delete/@domain.DomainId">
+                            <i class="fas fa-trash">
+                            </i>
+                            Sil
+                        </a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+<div class="mt-2">
+    <a class="btn btn-success" href="/Domain/New/"> <i class="fas fa-cart-plus"></i> Ekle </a>
+</div>
+
+
+
+
+
+

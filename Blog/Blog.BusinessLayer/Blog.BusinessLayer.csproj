@@ -44,13 +44,17 @@
     <Compile Include="Abstract\IAboutService.cs" />
     <Compile Include="Abstract\ICategoryService.cs" />
     <Compile Include="Abstract\ICommentService.cs" />
+    <Compile Include="Abstract\IDomainService.cs" />
     <Compile Include="Abstract\IGenericService.cs" />
+    <Compile Include="Abstract\IPhotoService.cs" />
     <Compile Include="Abstract\IPostService.cs" />
     <Compile Include="Abstract\ISocialMediaService.cs" />
     <Compile Include="Abstract\IUserService.cs" />
     <Compile Include="Concrate\AboutManager.cs" />
     <Compile Include="Concrate\CategoryManager.cs" />
     <Compile Include="Concrate\CommentManager.cs" />
+    <Compile Include="Concrate\DomainManager.cs" />
+    <Compile Include="Concrate\PhotoManager.cs" />
     <Compile Include="Concrate\PostManager.cs" />
     <Compile Include="Concrate\UserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

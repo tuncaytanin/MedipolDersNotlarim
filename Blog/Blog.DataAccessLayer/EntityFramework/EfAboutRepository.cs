@@ -9,6 +9,7 @@ using Blog.EntitesLayer.Concrate;
 
 namespace Blog.DataAccessLayer.EntityFramework
 {
+
     public class EfAboutRepository : EntityRepositoryBase<About>, IAboutDal
     {
 

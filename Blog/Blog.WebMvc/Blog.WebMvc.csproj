@@ -148,6 +148,7 @@
     <Compile Include="Controllers\CategoryController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\DefaultController.cs" />
+    <Compile Include="Controllers\DomainController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\SocialMediaController.cs" />
@@ -2720,6 +2721,10 @@
     <Content Include="Views\User\FormUser.cshtml" />
     <Content Include="Views\Category\Index.cshtml" />
     <Content Include="Views\Category\CategoryForm.cshtml" />
+    <Content Include="Views\About\List.cshtml" />
+    <Content Include="Views\About\FormAbout.cshtml" />
+    <Content Include="Views\Domain\List.cshtml" />
+    <Content Include="Views\Domain\FormDomain.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

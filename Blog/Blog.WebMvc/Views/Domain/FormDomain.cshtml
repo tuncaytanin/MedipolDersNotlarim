@@ -1,0 +1,47 @@
+﻿@model Blog.EntitesLayer.Concrate.Domain
+@{
+    ViewBag.Title = "FormDomain";
+    Layout = "~/Views/Shared/_UserPanelLayout.cshtml";
+    string islem = "";
+    if (Model.DomainId == 0)
+    {
+        islem = "Ekle";
+    }
+    else
+    {
+        islem = "Güncelle";
+    }
+}
+
+
+<div class="card card-primary">
+    <div class="card-header">
+        <h3 class="card-title ">Domain @islem  Sayfası</h3>
+    </div>
+    <!-- /.card-header -->
+    <!-- form start -->
+
+    @using (Html.BeginForm("AddOrUpdate", "Domain", FormMethod.Post))
+    {
+
+
+        <div class="card-body">
+
+            @Html.HiddenFor(x => x.DomainId)
+            <div class="form-group">
+                @Html.LabelFor(x => x.DomainName)
+                @Html.TextBoxFor(x => x.DomainName, new { @class = "form-control", placeholder = "Yetki Adını giriniz" })
+            </div>
+        </div>
+        <!-- /.card-body -->
+
+        <div class="card-footer">
+            <button type="submit" class="btn btn-primary">
+
+                @islem
+            </button>
+        </div>
+    }
+</div>
+
+
