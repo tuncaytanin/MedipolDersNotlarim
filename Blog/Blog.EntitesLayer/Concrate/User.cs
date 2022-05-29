@@ -32,5 +32,8 @@ namespace Blog.EntitesLayer.Concrate
         public string UserPhotoPath { get; set; }
         public string UserPhotoThumpnailPath { get; set; }
 
+        public string UserTitel { get; set; }
+        public string UserAbout { get; set; }
+
     }
 }

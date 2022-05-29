@@ -2725,6 +2725,8 @@
     <Content Include="Views\About\FormAbout.cshtml" />
     <Content Include="Views\Domain\List.cshtml" />
     <Content Include="Views\Domain\FormDomain.cshtml" />
+    <Content Include="Views\User\Index.cshtml" />
+    <Content Include="Views\Blog\MyBlogList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

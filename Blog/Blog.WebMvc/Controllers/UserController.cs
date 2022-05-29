@@ -13,9 +13,18 @@ namespace Blog.WebMvc.Controllers
     {
         private UserManager um = new UserManager(new EfUserRepository());
         // GET: User
-        public ActionResult Index()
+        public ActionResult Index(string aramaKelime)
         {
-            var users = um.GetAll();
+            List<User> users = new List<User>();
+            if (string.IsNullOrEmpty(aramaKelime))
+            {
+                users = um.GetAll();
+            }
+            else
+            {
+                users = um.GetAllByFilter(x => x.UserName.Contains(aramaKelime) || x.UserLastName.Contains(aramaKelime) || x.UserEmail.Contains(aramaKelime), null);
+            }
+             
             return View(users);
         }
 
@@ -67,5 +76,24 @@ namespace Blog.WebMvc.Controllers
 
             return RedirectToAction("Index", "UserPanel");
         }
+   
+        public ActionResult  Bam(int id)
+        {
+            var user = um.GetModelById(id);
+            if (user == null)
+            {
+                return HttpNotFound();
+            }
+
+            if (user.UserStatus)
+                user.UserStatus = false;
+            else
+                user.UserStatus = true;
+
+            um.Update(user);
+
+            return RedirectToAction("Index","User");
+        }
+   
     }
 }

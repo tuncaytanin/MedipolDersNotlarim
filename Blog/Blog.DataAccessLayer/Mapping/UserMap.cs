@@ -17,6 +17,8 @@ namespace Blog.DataAccessLayer.Mapping
             this.Property(x => x.UserPhotoName).HasColumnType("nvarchar").HasMaxLength(100);
             this.Property(x => x.UserPhotoPath).HasColumnType("nvarchar").HasMaxLength(200);
             this.Property(x => x.UserPhotoThumpnailPath).HasColumnType("nvarchar").HasMaxLength(200);
+            this.Property(x => x.UserTitel).HasColumnType("nvarchar").HasMaxLength(100);
+            this.Property(x => x.UserAbout).HasColumnType("nvarchar").HasMaxLength(4000);
         }
     }
 }

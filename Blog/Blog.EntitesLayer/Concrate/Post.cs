@@ -30,5 +30,7 @@ namespace Blog.EntitesLayer.Concrate
         public  int CategoriId { get; set; }
 
         public  virtual  Category Category { get; set; }
+
+        public bool PostStatus { get; set; }
     }
 }

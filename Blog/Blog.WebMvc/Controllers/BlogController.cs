@@ -48,5 +48,15 @@ namespace Blog.WebMvc.Controllers
             var posts = pm.Last3Blogs();
             return PartialView(posts);
         }
+   
+        [HttpGet]
+        public ActionResult MyBlogList(int id)
+        {
+            string[] includes = { "Category", "Photo" ,"Writer"};
+            var blogs = pm.GetAllByFilter(x => x.WriterId == id, includes);
+            return View(blogs);
+
+        }
+
     }
 }
