@@ -16,6 +16,7 @@ namespace Blog.WebMvc.Controllers
         // GET: Blog
         private PostManager pm = new PostManager(new EfPostRepository());
         private CommentManager cm = new CommentManager(new EfCommentRepository());
+        private CategoryManager ctgm = new CategoryManager(new EfCategoryRepository());
         
         public ActionResult Index()
         {
@@ -56,6 +57,48 @@ namespace Blog.WebMvc.Controllers
             var blogs = pm.GetAllByFilter(x => x.WriterId == id, includes);
             return View(blogs);
 
+        }
+
+        [HttpGet]
+        public ActionResult New()
+        {
+            return View("FormBlog",new BlogNewViewModel() { Post = new Post() { PostId = 0 }, Categories = ctgm.GetAll() });
+        }
+
+        [HttpGet]
+        public ActionResult Update(int id)
+        {
+            var post = pm.GetModelById(id);
+            if (post == null )
+            {
+                return HttpNotFound();
+            }
+
+            BlogNewViewModel bnvm = new BlogNewViewModel() { Post = post, Categories = ctgm.GetAll() };
+            return View("FormBlog", bnvm);
+        }
+        [HttpPost]
+        public ActionResult AddOrUpdate(Post post)
+        {
+            post.PostStatus = true;
+            
+            if (post.PostId == 0)
+            {
+                // Yeni bir Kayıt Ekleme
+                post.CreateDate = DateTime.Now;
+                post.CommentCount = 0;
+                post.LikeCount = 0;
+                post.PhotoId = 1;
+                post.WriterId = 3;
+                pm.Add(post);
+            }
+            else
+            {
+                // Güncelleme
+                pm.Update(post);
+            }
+
+            return RedirectToAction("MyBlogList/3");
         }
 
     }

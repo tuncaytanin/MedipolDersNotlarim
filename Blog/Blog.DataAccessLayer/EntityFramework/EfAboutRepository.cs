@@ -20,7 +20,7 @@ namespace Blog.DataAccessLayer.EntityFramework
 
         public About GetFirstModel(string photo)
         {
-            return _object.Include(photo).SingleOrDefault(x => x.AboutStatus == true);
+            return _object.Include(photo).Single(x => x.AboutStatus == true);
         }
 
         public List<About> GetWithPhotos(string photo)

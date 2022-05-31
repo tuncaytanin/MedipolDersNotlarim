@@ -162,6 +162,7 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="ViewModels\BlogNewViewModel.cs" />
     <Compile Include="ViewModels\BlogOkuViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -2727,6 +2728,7 @@
     <Content Include="Views\Domain\FormDomain.cshtml" />
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\Blog\MyBlogList.cshtml" />
+    <Content Include="Views\Blog\FormBlog.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

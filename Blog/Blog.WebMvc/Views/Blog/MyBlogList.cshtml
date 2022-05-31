@@ -33,6 +33,9 @@
                         <th style="width: 8%" class="text-center">
                             Detaylar
                         </th>
+                        <th style="width: 3%">
+                            Durumu
+                        </th>
                         <th style="width: 20%">
                             İşlemler
                         </th>
@@ -43,47 +46,59 @@
                     {
 
 
-                    <tr>
-                        <td>
-                            @post.PostId
-                        </td>
-                        <td>
-                            <a>
-                                @post.PostTitle
-                            </a>
-                            <br />
-                            <small>
-                                @post.CreateDate
-                            </small>
-                        </td>
-                        <td>
-                              @(post.PostContent.Length > 150 ? post.PostContent.Substring(0,150) : post.PostContent))
-                        </td>
-                        <td class="project-state">
-                            <span class="badge badge-success">@post.Category.CategoryName</span>
-                        </td>
-                        <td>
-                            <a href="/Post/CommentList/@post.PostId"> <i class="fas fa-comment"> </i>   @post.CommentCount </a>  &nbsp;&nbsp;
-                            <a href="/Post/LikeList/@post.PostId">             <i class="fas fa-users"> </i> @post.LikeCount</a>
-               
-                        </td>
-                        <td class="project-actions text-center">
-                            <a class="btn btn-info btn-sm" href="/Post/Edit/@post.PostId">
-                                <i class="fas fa-pencil-alt">
-                                </i>
-                                Düzenle
-                            </a>
-                            <!-- Silme işlemini java script ile yapalım.... -->
-                            <a class="btn btn-danger btn-sm" href="/Post/Delete/@post.PostId">
-                                <i class="fas fa-trash">
-                                </i>
-                                Sil
-                            </a>
-                        </td>
-                    </tr>
+                        <tr>
+                            <td>
+                                @post.PostId
+                            </td>
+                            <td>
+                                <a>
+                                    @post.PostTitle
+                                </a>
+                                <br />
+                                <small>
+                                    @post.CreateDate
+                                </small>
+                            </td>
+                            <td>
+                                @(post.PostContent.Length > 150 ? post.PostContent.Substring(0,150) : post.PostContent))
+                            </td>
+                            <td class="project-state">
+                                <span class="@(post.CategoriId %4 ==0 ? "badge badge-success": post.CategoriId %4 ==1 ? "badge badge-primary" :  post.CategoriId %4 ==2 ? "badge badge-info" :  "badge badge-danger" )">@post.Category.CategoryName</span>
+                            </td>
+                            <td>
+                                <a href="/Post/CommentList/@post.PostId"> 
+                                <i class="fas fa-comment"> </i>   @post.CommentCount 
+                                    </a>  &nbsp;&nbsp;
+                                <a href="/Post/LikeList/@post.PostId">
+                                    <i class="fas fa-users"> </i> @post.LikeCount
+                                </a>
+
+                            </td>
+                            <td class="@(post.PostStatus ? "text-success":"text-danger")">
+                                @(post.PostStatus ? "Aktif":"Pasif")
+                            </td>
+                            <td class="project-actions text-center">
+                                <a class="btn btn-info btn-sm" href="/Blog/Update/@post.PostId">
+                                    <i class="fas fa-pencil-alt">
+                                    </i>
+                                    Düzenle
+                                </a>
+                                <!-- Silme işlemini java script ile yapalım.... -->
+                                <a class="btn btn-danger btn-sm" href="/Blog/Delete/@post.PostId">
+                                    <i class="fas fa-trash">
+                                    </i>
+                                    Sil
+                                </a>
+                            </td>
+                        </tr>
                     }
                 </tbody>
             </table>
+
+            <div class="m-2 align-items-center">
+                <a class="btn btn-success" href="/Blog/New/"> Ekle </a>
+            </div>
+
         </div>
         <!-- /.card-body -->
     </div>

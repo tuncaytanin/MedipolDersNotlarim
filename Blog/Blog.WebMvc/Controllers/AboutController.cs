@@ -26,7 +26,7 @@ namespace Blog.WebMvc.Controllers
             // aboutViewModel göndericem..
 
             
-            aboutViewModel.About = am.GetFirstOrDefaultAbout("Photo");
+            aboutViewModel.About = am.GetFirstOrDefaultAbout();
             aboutViewModel.SocialMedias = sm.GetAll();
             return View(aboutViewModel);
         }
